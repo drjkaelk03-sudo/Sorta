@@ -1,0 +1,50 @@
+[
+{
+"id": 42,
+"date": "2026-08-11",
+"title": "The Billion Dollar Club",
+"unit": "USD",
+"topLabel": "HIGHEST",
+"bottomLabel": "LOWEST",
+"items": [
+{ "id": "1", "title": "'AVATAR' BOX OFFICE", "displayValue": "$2.92B", "numericValue": 2.92 },
+{ "id": "2", "title": "MICROSOFT BUYS MINECRAFT", "displayValue": "$2.50B", "numericValue": 2.50 },
+{ "id": "3", "title": "'STAR WARS: EP VII' BOX OFFICE", "displayValue": "$2.07B", "numericValue": 2.07 },
+{ "id": "4", "title": "COST TO BUILD BURJ KHALIFA", "displayValue": "$1.50B", "numericValue": 1.50 },
+{ "id": "5", "title": "FACEBOOK BUYS INSTAGRAM", "displayValue": "$1.00B", "numericValue": 1.00 },
+{ "id": "6", "title": "'THE MATRIX' BOX OFFICE", "displayValue": "$0.46B", "numericValue": 0.46 }
+]
+},
+{
+"id": 43,
+"date": "2026-08-12",
+"title": "Speed on Land",
+"unit": "MPH",
+"topLabel": "FASTEST",
+"bottomLabel": "SLOWEST",
+"items": [
+{ "id": "1", "title": "CHEETAH", "displayValue": "75 MPH", "numericValue": 75 },
+{ "id": "2", "title": "US HIGHWAY SPEED LIMIT", "displayValue": "65 MPH", "numericValue": 65 },
+{ "id": "3", "title": "GREYHOUND DOG", "displayValue": "45 MPH", "numericValue": 45 },
+{ "id": "4", "title": "USAIN BOLT (TOP SPEED)", "displayValue": "27.7 MPH", "numericValue": 27.7 },
+{ "id": "5", "title": "AVERAGE GOLF CART", "displayValue": "15 MPH", "numericValue": 15 },
+{ "id": "6", "title": "THREE-TOED SLOTH", "displayValue": "0.15 MPH", "numericValue": 0.15 }
+]
+},
+{
+"id": 44,
+"date": "2026-08-13",
+"title": "Distance from the Sun",
+"unit": "M MILES",
+"topLabel": "FARTHEST",
+"bottomLabel": "CLOSEST",
+"items": [
+{ "id": "1", "title": "VOYAGER 1 PROBE", "displayValue": "15,000M", "numericValue": 15000 },
+{ "id": "2", "title": "NEPTUNE", "displayValue": "2,793M", "numericValue": 2793 },
+{ "id": "3", "title": "SATURN", "displayValue": "886M", "numericValue": 886 },
+{ "id": "4", "title": "JUPITER", "displayValue": "484M", "numericValue": 484 },
+{ "id": "5", "title": "JAMES WEBB TELESCOPE", "displayValue": "94M", "numericValue": 94 },
+{ "id": "6", "title": "EARTH", "displayValue": "93M", "numericValue": 93 }
+]
+}
+]
