@@ -507,22 +507,19 @@ function GameBoard({ dailyPuzzle }) {
               {dailyPuzzle.topLabel || "HIGHEST"}
             </h1>
             
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2.5rem 0' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '3.5rem 0', gap: '3.5rem' }}>
               <motion.div 
-                animate={{ y: [0, -8, 0, 8, 0] }}
-                transition={{ repeat: Infinity, duration: 0.8, ease: "linear" }}
-                style={{ color: '#06B6D4', fontSize: '4.5rem', lineHeight: 1, marginBottom: '0.5rem' }}
+                animate={{ y: [-15, 15] }}
+                transition={{ repeat: Infinity, repeatType: "reverse", duration: 1.2, ease: "easeInOut" }}
+                style={{ color: '#06B6D4', fontSize: '5rem', lineHeight: 1, margin: 0 }}
               >
                 ↕
               </motion.div>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
+              <p
                 style={{ color: '#06B6D4', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}
               >
                 Drag tiles into correct order
-              </motion.p>
+              </p>
             </div>
 
             <h1 style={{ color: '#f8fafc', fontSize: '2.5rem', margin: 0, fontWeight: 900, letterSpacing: '0.1em', lineHeight: 1 }}>
