@@ -29,31 +29,35 @@ export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loadAndCheckPuzzle = async () => {
+    let isMounted = true; // Safely prevent React state updates if component unmounts
+
+    const loadPuzzle = async () => {
       try {
-        const userTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-        const response = await fetch(`/api/daily?tz=${encodeURIComponent(userTz)}`);
+        // FIX 1: Strip the timezone parameter. The server dictates the time globally.
+        const response = await fetch('/api/daily');
         
         if (!response.ok) throw new Error('Failed to load puzzle');
         const serverPuzzle = await response.json();
 
-        try {
-          if (typeof window !== 'undefined') {
-            localStorage.setItem('sorta_daily_cache', JSON.stringify({
-              timestamp: Date.now(),
-              puzzle: serverPuzzle
-            }));
-          }
-        } catch (storageErr) {}
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('sorta_daily_cache', JSON.stringify({
+            timestamp: Date.now(),
+            puzzle: serverPuzzle
+          }));
+        }
 
-        setDailyPuzzle(currentPuzzle => !currentPuzzle ? serverPuzzle : currentPuzzle);
-        setLoading(false);
+        if (isMounted) {
+          setDailyPuzzle(serverPuzzle);
+          setLoading(false);
+        }
       } catch (err) {
+        console.warn("Network fetch failed, attempting cache fallback...", err);
         try {
           const cached = localStorage.getItem('sorta_daily_cache');
           if (cached) {
             const { puzzle, timestamp } = JSON.parse(cached);
-            if (Date.now() - timestamp < 86400000) {
+            // If cache is less than 12 hours old, safely use it
+            if (Date.now() - timestamp < 43200000 && isMounted) {
               setDailyPuzzle(puzzle);
               setLoading(false);
               return;
@@ -61,25 +65,23 @@ export default function App() {
           }
         } catch(cacheErr) {}
 
-        setDailyPuzzle(EMERGENCY_PUZZLE);
-        setLoading(false);
+        if (isMounted) {
+          console.error("Cache failed or expired. Initializing Emergency Puzzle.");
+          setDailyPuzzle(EMERGENCY_PUZZLE);
+          setLoading(false);
+        }
       }
     };
 
-    loadAndCheckPuzzle();
-    const handleVisibilityChange = () => document.visibilityState === 'visible' && loadAndCheckPuzzle();
-    const preventSafariZoom = (e) => e.touches && e.touches.length > 1 && e.preventDefault();
+    loadPuzzle();
 
-    window.addEventListener('focus', loadAndCheckPuzzle);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    // FIX 2: Removed the self-DDoS polling. Hitting the API once on load is sufficient.
+    const preventSafariZoom = (e) => e.touches && e.touches.length > 1 && e.preventDefault();
     document.addEventListener('touchmove', preventSafariZoom, { passive: false });
-    const clockTick = setInterval(loadAndCheckPuzzle, 60000);
 
     return () => {
-      window.removeEventListener('focus', loadAndCheckPuzzle);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      isMounted = false;
       document.removeEventListener('touchmove', preventSafariZoom, { passive: false });
-      clearInterval(clockTick);
     };
   }, []);
 

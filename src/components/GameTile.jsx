@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Reorder, motion, animate } from 'framer-motion';
 
-export default function GameTile({ item, index, phase, gameState, handleKeyDown, dailyPuzzle, maxRevealedValue, onDragStart, onDragEnd }) {
+export default function GameTile({ item, index, phase, gameState, handleKeyDown, dailyPuzzle, maxRevealedValue, onDragEnd }) {
   const isIdle = phase === 'idle' && gameState === 'playing';
   const isPathA = phase === 'path_a_win' || gameState === 'lost';
   const countRef = useRef(null);
@@ -28,21 +28,31 @@ export default function GameTile({ item, index, phase, gameState, handleKeyDown,
     }
   }, [isPathA, item, index, dailyPuzzle.unit]);
 
-  // FIX #5: The NaN Progress Bar Explosion
-  // Safely falls back to 0 if numericValue is stripped, and ensures maxRevealedValue is never 0
   const safeNumericValue = item.numericValue || 0;
   const safeMax = maxRevealedValue || 1;
   const fillWidth = Math.min(100, Math.max(15, (safeNumericValue / safeMax) * 100)) || 15;
+
+  // Haptic feedback to confirm drag initialization on touch screens
+  const handleDragStart = () => {
+    if (typeof navigator !== 'undefined' && navigator.vibrate) {
+      navigator.vibrate(15);
+    }
+  };
 
   return (
     <Reorder.Item
       value={item}
       dragListener={isIdle}
-      variants={{ active: { zIndex: 999 }, idle: { zIndex: 1 } }}
+      // FIX 1: The Safari WebKit GPU Layer Fix
+      // z (translateZ) forces the GPU to render the active tile above everything else
+      variants={{ 
+        active: { zIndex: 999, z: 100 }, 
+        idle: { zIndex: 1, z: 0 } 
+      }}
       whileDrag="active"
       whileTap={isIdle ? "active" : "idle"}
       initial="idle"
-      onDragStart={onDragStart}
+      onDragStart={handleDragStart}
       onDragEnd={onDragEnd}
       onKeyDown={(e) => handleKeyDown(e, index)}
       tabIndex={isIdle ? 0 : -1}
