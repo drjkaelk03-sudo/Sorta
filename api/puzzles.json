@@ -1,0 +1,2762 @@
+[
+  {
+    "id": 1,
+    "date": "2026-08-17",
+    "title": "The Billion Dollar Club",
+    "unit": "USD",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "'AVATAR' BOX OFFICE",
+        "displayValue": "$2.92B",
+        "numericValue": 2.92
+      },
+      {
+        "id": "2",
+        "title": "MICROSOFT BUYS MINECRAFT",
+        "displayValue": "$2.50B",
+        "numericValue": 2.5
+      },
+      {
+        "id": "3",
+        "title": "'STAR WARS: EP VII' BOX OFFICE",
+        "displayValue": "$2.07B",
+        "numericValue": 2.07
+      },
+      {
+        "id": "4",
+        "title": "COST TO BUILD BURJ KHALIFA",
+        "displayValue": "$1.50B",
+        "numericValue": 1.5
+      },
+      {
+        "id": "5",
+        "title": "FACEBOOK BUYS INSTAGRAM",
+        "displayValue": "$1.00B",
+        "numericValue": 1.0
+      },
+      {
+        "id": "6",
+        "title": "'THE MATRIX' BOX OFFICE",
+        "displayValue": "$0.46B",
+        "numericValue": 0.46
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "date": "2026-08-18",
+    "title": "Speed on Land",
+    "unit": "MPH",
+    "topLabel": "FASTEST",
+    "bottomLabel": "SLOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "CHEETAH",
+        "displayValue": "75 MPH",
+        "numericValue": 75
+      },
+      {
+        "id": "2",
+        "title": "US HIGHWAY SPEED LIMIT",
+        "displayValue": "65 MPH",
+        "numericValue": 65
+      },
+      {
+        "id": "3",
+        "title": "GREYHOUND DOG",
+        "displayValue": "45 MPH",
+        "numericValue": 45
+      },
+      {
+        "id": "4",
+        "title": "USAIN BOLT (TOP SPEED)",
+        "displayValue": "27.7 MPH",
+        "numericValue": 27.7
+      },
+      {
+        "id": "5",
+        "title": "AVERAGE GOLF CART",
+        "displayValue": "15 MPH",
+        "numericValue": 15
+      },
+      {
+        "id": "6",
+        "title": "THREE-TOED SLOTH",
+        "displayValue": "0.15 MPH",
+        "numericValue": 0.15
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "date": "2026-08-19",
+    "title": "Distance from the Sun",
+    "unit": "M MILES",
+    "topLabel": "FARTHEST",
+    "bottomLabel": "CLOSEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "VOYAGER 1 PROBE",
+        "displayValue": "15,000M",
+        "numericValue": 15000
+      },
+      {
+        "id": "2",
+        "title": "NEPTUNE",
+        "displayValue": "2,793M",
+        "numericValue": 2793
+      },
+      {
+        "id": "3",
+        "title": "SATURN",
+        "displayValue": "886M",
+        "numericValue": 886
+      },
+      {
+        "id": "4",
+        "title": "JUPITER",
+        "displayValue": "484M",
+        "numericValue": 484
+      },
+      {
+        "id": "5",
+        "title": "JAMES WEBB TELESCOPE",
+        "displayValue": "94M",
+        "numericValue": 94
+      },
+      {
+        "id": "6",
+        "title": "EARTH",
+        "displayValue": "93M",
+        "numericValue": 93
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "date": "2026-08-20",
+    "title": "Maximum Lifespans",
+    "unit": "YEARS",
+    "topLabel": "LONGEST",
+    "bottomLabel": "SHORTEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "BOWHEAD WHALE",
+        "displayValue": "200 YEARS",
+        "numericValue": 200
+      },
+      {
+        "id": "2",
+        "title": "GALAPAGOS TORTOISE",
+        "displayValue": "175 YEARS",
+        "numericValue": 175
+      },
+      {
+        "id": "3",
+        "title": "HUMAN (VERIFIED MAX)",
+        "displayValue": "122 YEARS",
+        "numericValue": 122
+      },
+      {
+        "id": "4",
+        "title": "AFRICAN ELEPHANT",
+        "displayValue": "70 YEARS",
+        "numericValue": 70
+      },
+      {
+        "id": "5",
+        "title": "DOMESTIC CAT",
+        "displayValue": "38 YEARS",
+        "numericValue": 38
+      },
+      {
+        "id": "6",
+        "title": "MAYFLY",
+        "displayValue": "1 DAY",
+        "numericValue": 0.002
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "date": "2026-08-21",
+    "title": "Global Heat",
+    "unit": "\u00b0F",
+    "topLabel": "HOTTEST",
+    "bottomLabel": "COLDEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "SURFACE OF THE SUN",
+        "displayValue": "9,932 \u00b0F",
+        "numericValue": 9932
+      },
+      {
+        "id": "2",
+        "title": "LAVA (AVERAGE)",
+        "displayValue": "2,000 \u00b0F",
+        "numericValue": 2000
+      },
+      {
+        "id": "3",
+        "title": "VENUS (SURFACE)",
+        "displayValue": "867 \u00b0F",
+        "numericValue": 867
+      },
+      {
+        "id": "4",
+        "title": "DEATH VALLEY RECORD",
+        "displayValue": "134 \u00b0F",
+        "numericValue": 134
+      },
+      {
+        "id": "5",
+        "title": "SAHARA DESERT AVERAGE",
+        "displayValue": "86 \u00b0F",
+        "numericValue": 86
+      },
+      {
+        "id": "6",
+        "title": "ROOM TEMPERATURE",
+        "displayValue": "72 \u00b0F",
+        "numericValue": 72
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "date": "2026-08-22",
+    "title": "Metropolis Population",
+    "unit": "MILLION",
+    "topLabel": "MOST",
+    "bottomLabel": "LEAST",
+    "items": [
+      {
+        "id": "1",
+        "title": "TOKYO, JAPAN",
+        "displayValue": "37.1 M",
+        "numericValue": 37.1
+      },
+      {
+        "id": "2",
+        "title": "DELHI, INDIA",
+        "displayValue": "32.9 M",
+        "numericValue": 32.9
+      },
+      {
+        "id": "3",
+        "title": "SHANGHAI, CHINA",
+        "displayValue": "29.2 M",
+        "numericValue": 29.2
+      },
+      {
+        "id": "4",
+        "title": "SAO PAULO, BRAZIL",
+        "displayValue": "22.6 M",
+        "numericValue": 22.6
+      },
+      {
+        "id": "5",
+        "title": "NEW YORK CITY, USA",
+        "displayValue": "18.9 M",
+        "numericValue": 18.9
+      },
+      {
+        "id": "6",
+        "title": "LONDON, UK",
+        "displayValue": "9.6 M",
+        "numericValue": 9.6
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "date": "2026-08-23",
+    "title": "Elevations",
+    "unit": "FEET",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "MOUNT EVEREST",
+        "displayValue": "29,032 FT",
+        "numericValue": 29032
+      },
+      {
+        "id": "2",
+        "title": "MOUNT KILIMANJARO",
+        "displayValue": "19,341 FT",
+        "numericValue": 19341
+      },
+      {
+        "id": "3",
+        "title": "DENALI (MT. MCKINLEY)",
+        "displayValue": "14,500 FT",
+        "numericValue": 14500
+      },
+      {
+        "id": "4",
+        "title": "MACHU PICCHU",
+        "displayValue": "7,970 FT",
+        "numericValue": 7970
+      },
+      {
+        "id": "5",
+        "title": "DENVER, COLORADO",
+        "displayValue": "5,280 FT",
+        "numericValue": 5280
+      },
+      {
+        "id": "6",
+        "title": "DEATH VALLEY",
+        "displayValue": "-282 FT",
+        "numericValue": -282
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "date": "2026-08-24",
+    "title": "Spotify Hall of Fame",
+    "unit": "BILLION",
+    "topLabel": "MOST STREAMED",
+    "bottomLabel": "LEAST STREAMED",
+    "items": [
+      {
+        "id": "1",
+        "title": "BLINDING LIGHTS (THE WEEKND)",
+        "displayValue": "4.1 B",
+        "numericValue": 4.1
+      },
+      {
+        "id": "2",
+        "title": "SHAPE OF YOU (ED SHEERAN)",
+        "displayValue": "3.8 B",
+        "numericValue": 3.8
+      },
+      {
+        "id": "3",
+        "title": "SOMEONE YOU LOVED (LEWIS CAPALDI)",
+        "displayValue": "3.3 B",
+        "numericValue": 3.3
+      },
+      {
+        "id": "4",
+        "title": "SUNFLOWER (POST MALONE)",
+        "displayValue": "3.2 B",
+        "numericValue": 3.2
+      },
+      {
+        "id": "5",
+        "title": "AS IT WAS (HARRY STYLES)",
+        "displayValue": "3.1 B",
+        "numericValue": 3.1
+      },
+      {
+        "id": "6",
+        "title": "MR. BRIGHTSIDE (THE KILLERS)",
+        "displayValue": "2.0 B",
+        "numericValue": 2.0
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "date": "2026-08-25",
+    "title": "Animal Gestation Periods",
+    "unit": "DAYS",
+    "topLabel": "LONGEST",
+    "bottomLabel": "SHORTEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "AFRICAN ELEPHANT",
+        "displayValue": "640 DAYS",
+        "numericValue": 640
+      },
+      {
+        "id": "2",
+        "title": "SPERM WHALE",
+        "displayValue": "480 DAYS",
+        "numericValue": 480
+      },
+      {
+        "id": "3",
+        "title": "HUMAN",
+        "displayValue": "280 DAYS",
+        "numericValue": 280
+      },
+      {
+        "id": "4",
+        "title": "DOMESTIC DOG",
+        "displayValue": "63 DAYS",
+        "numericValue": 63
+      },
+      {
+        "id": "5",
+        "title": "KANGAROO",
+        "displayValue": "33 DAYS",
+        "numericValue": 33
+      },
+      {
+        "id": "6",
+        "title": "VIRGINIA OPOSSUM",
+        "displayValue": "12 DAYS",
+        "numericValue": 12
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "date": "2026-08-26",
+    "title": "Fast Food Foundings",
+    "unit": "YEARS OLD",
+    "topLabel": "OLDEST",
+    "bottomLabel": "NEWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "WHITE CASTLE",
+        "displayValue": "1921",
+        "numericValue": 105
+      },
+      {
+        "id": "2",
+        "title": "KFC",
+        "displayValue": "1930",
+        "numericValue": 96
+      },
+      {
+        "id": "3",
+        "title": "MCDONALD'S",
+        "displayValue": "1940",
+        "numericValue": 86
+      },
+      {
+        "id": "4",
+        "title": "TACO BELL",
+        "displayValue": "1962",
+        "numericValue": 64
+      },
+      {
+        "id": "5",
+        "title": "SUBWAY",
+        "displayValue": "1965",
+        "numericValue": 61
+      },
+      {
+        "id": "6",
+        "title": "CHIPOTLE",
+        "displayValue": "1993",
+        "numericValue": 33
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "date": "2026-08-27",
+    "title": "Solar System Moons",
+    "unit": "MOONS",
+    "topLabel": "MOST",
+    "bottomLabel": "LEAST",
+    "items": [
+      {
+        "id": "1",
+        "title": "SATURN",
+        "displayValue": "146 MOONS",
+        "numericValue": 146
+      },
+      {
+        "id": "2",
+        "title": "JUPITER",
+        "displayValue": "95 MOONS",
+        "numericValue": 95
+      },
+      {
+        "id": "3",
+        "title": "URANUS",
+        "displayValue": "28 MOONS",
+        "numericValue": 28
+      },
+      {
+        "id": "4",
+        "title": "NEPTUNE",
+        "displayValue": "16 MOONS",
+        "numericValue": 16
+      },
+      {
+        "id": "5",
+        "title": "MARS",
+        "displayValue": "2 MOONS",
+        "numericValue": 2
+      },
+      {
+        "id": "6",
+        "title": "EARTH",
+        "displayValue": "1 MOON",
+        "numericValue": 1
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "date": "2026-08-28",
+    "title": "Animated Box Office",
+    "unit": "BILLION",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "INSIDE OUT 2",
+        "displayValue": "$1.69 B",
+        "numericValue": 1.69
+      },
+      {
+        "id": "2",
+        "title": "FROZEN II",
+        "displayValue": "$1.45 B",
+        "numericValue": 1.45
+      },
+      {
+        "id": "3",
+        "title": "THE SUPER MARIO BROS. MOVIE",
+        "displayValue": "$1.36 B",
+        "numericValue": 1.36
+      },
+      {
+        "id": "4",
+        "title": "FROZEN",
+        "displayValue": "$1.28 B",
+        "numericValue": 1.28
+      },
+      {
+        "id": "5",
+        "title": "INCREDIBLES 2",
+        "displayValue": "$1.24 B",
+        "numericValue": 1.24
+      },
+      {
+        "id": "6",
+        "title": "THE LION KING (1994)",
+        "displayValue": "$0.96 B",
+        "numericValue": 0.96
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "date": "2026-08-29",
+    "title": "The Scoville Scale",
+    "unit": "K SHU",
+    "topLabel": "SPICIEST",
+    "bottomLabel": "MILDEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "PEPPER X",
+        "displayValue": "2,693,000",
+        "numericValue": 2693
+      },
+      {
+        "id": "2",
+        "title": "CAROLINA REAPER",
+        "displayValue": "1,641,000",
+        "numericValue": 1641
+      },
+      {
+        "id": "3",
+        "title": "GHOST PEPPER",
+        "displayValue": "1,000,000",
+        "numericValue": 1000
+      },
+      {
+        "id": "4",
+        "title": "HABANERO",
+        "displayValue": "350,000",
+        "numericValue": 350
+      },
+      {
+        "id": "5",
+        "title": "JALAPE\u00d1O",
+        "displayValue": "5,000",
+        "numericValue": 5
+      },
+      {
+        "id": "6",
+        "title": "BELL PEPPER",
+        "displayValue": "0",
+        "numericValue": 0
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "date": "2026-08-30",
+    "title": "Video Game Consoles",
+    "unit": "MILLION",
+    "topLabel": "MOST SOLD",
+    "bottomLabel": "LEAST SOLD",
+    "items": [
+      {
+        "id": "1",
+        "title": "PLAYSTATION 2",
+        "displayValue": "155 M",
+        "numericValue": 155
+      },
+      {
+        "id": "2",
+        "title": "NINTENDO DS",
+        "displayValue": "154 M",
+        "numericValue": 154
+      },
+      {
+        "id": "3",
+        "title": "NINTENDO SWITCH",
+        "displayValue": "141 M",
+        "numericValue": 141
+      },
+      {
+        "id": "4",
+        "title": "GAME BOY",
+        "displayValue": "118 M",
+        "numericValue": 118
+      },
+      {
+        "id": "5",
+        "title": "PLAYSTATION 4",
+        "displayValue": "117 M",
+        "numericValue": 117
+      },
+      {
+        "id": "6",
+        "title": "ORIGINAL XBOX",
+        "displayValue": "24 M",
+        "numericValue": 24
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "date": "2026-08-31",
+    "title": "Social Media Giants",
+    "unit": "BILLION",
+    "topLabel": "MOST USERS",
+    "bottomLabel": "LEAST USERS",
+    "items": [
+      {
+        "id": "1",
+        "title": "FACEBOOK",
+        "displayValue": "3.0 B",
+        "numericValue": 3.0
+      },
+      {
+        "id": "2",
+        "title": "YOUTUBE",
+        "displayValue": "2.5 B",
+        "numericValue": 2.5
+      },
+      {
+        "id": "3",
+        "title": "WHATSAPP",
+        "displayValue": "2.0 B",
+        "numericValue": 2.0
+      },
+      {
+        "id": "4",
+        "title": "TIKTOK",
+        "displayValue": "1.5 B",
+        "numericValue": 1.5
+      },
+      {
+        "id": "5",
+        "title": "SNAPCHAT",
+        "displayValue": "0.7 B",
+        "numericValue": 0.7
+      },
+      {
+        "id": "6",
+        "title": "X (TWITTER)",
+        "displayValue": "0.5 B",
+        "numericValue": 0.5
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "date": "2026-09-01",
+    "title": "Global Rivers",
+    "unit": "MILES",
+    "topLabel": "LONGEST",
+    "bottomLabel": "SHORTEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "NILE RIVER",
+        "displayValue": "4,132 MILES",
+        "numericValue": 4132
+      },
+      {
+        "id": "2",
+        "title": "AMAZON RIVER",
+        "displayValue": "4,000 MILES",
+        "numericValue": 4000
+      },
+      {
+        "id": "3",
+        "title": "YANGTZE RIVER",
+        "displayValue": "3,915 MILES",
+        "numericValue": 3915
+      },
+      {
+        "id": "4",
+        "title": "MISSISSIPPI RIVER",
+        "displayValue": "2,340 MILES",
+        "numericValue": 2340
+      },
+      {
+        "id": "5",
+        "title": "DANUBE RIVER",
+        "displayValue": "1,770 MILES",
+        "numericValue": 1770
+      },
+      {
+        "id": "6",
+        "title": "RIVER THAMES",
+        "displayValue": "215 MILES",
+        "numericValue": 215
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "date": "2026-09-02",
+    "title": "Human Ingenuity",
+    "unit": "YEARS OLD",
+    "topLabel": "OLDEST",
+    "bottomLabel": "NEWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "PRINTING PRESS",
+        "displayValue": "1440",
+        "numericValue": 586
+      },
+      {
+        "id": "2",
+        "title": "TELESCOPE",
+        "displayValue": "1608",
+        "numericValue": 418
+      },
+      {
+        "id": "3",
+        "title": "STEAM ENGINE",
+        "displayValue": "1712",
+        "numericValue": 314
+      },
+      {
+        "id": "4",
+        "title": "INCANDESCENT LIGHTBULB",
+        "displayValue": "1879",
+        "numericValue": 147
+      },
+      {
+        "id": "5",
+        "title": "FIRST AIRPLANE",
+        "displayValue": "1903",
+        "numericValue": 123
+      },
+      {
+        "id": "6",
+        "title": "PERSONAL COMPUTER",
+        "displayValue": "1974",
+        "numericValue": 52
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "date": "2026-09-03",
+    "title": "Best-Selling Video Games",
+    "unit": "MILLION",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "MINECRAFT",
+        "displayValue": "300 M",
+        "numericValue": 300
+      },
+      {
+        "id": "2",
+        "title": "GRAND THEFT AUTO V",
+        "displayValue": "195 M",
+        "numericValue": 195
+      },
+      {
+        "id": "3",
+        "title": "TETRIS (EA MOBILE)",
+        "displayValue": "100 M",
+        "numericValue": 100
+      },
+      {
+        "id": "4",
+        "title": "WII SPORTS",
+        "displayValue": "82 M",
+        "numericValue": 82
+      },
+      {
+        "id": "5",
+        "title": "PUBG: BATTLEGROUNDS",
+        "displayValue": "75 M",
+        "numericValue": 75
+      },
+      {
+        "id": "6",
+        "title": "SUPER MARIO BROS (NES)",
+        "displayValue": "40 M",
+        "numericValue": 40
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "date": "2026-09-04",
+    "title": "The Human Skeleton",
+    "unit": "CM",
+    "topLabel": "LONGEST",
+    "bottomLabel": "SHORTEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "FEMUR (THIGH)",
+        "displayValue": "48 CM",
+        "numericValue": 48
+      },
+      {
+        "id": "2",
+        "title": "TIBIA (SHIN)",
+        "displayValue": "37 CM",
+        "numericValue": 37
+      },
+      {
+        "id": "3",
+        "title": "HUMERUS (UPPER ARM)",
+        "displayValue": "32 CM",
+        "numericValue": 32
+      },
+      {
+        "id": "4",
+        "title": "RADIUS (FOREARM)",
+        "displayValue": "24 CM",
+        "numericValue": 24
+      },
+      {
+        "id": "5",
+        "title": "CLAVICLE (COLLARBONE)",
+        "displayValue": "15 CM",
+        "numericValue": 15
+      },
+      {
+        "id": "6",
+        "title": "STAPES (INNER EAR)",
+        "displayValue": "0.3 CM",
+        "numericValue": 0.3
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "date": "2026-09-05",
+    "title": "Fast Food Calories",
+    "unit": "KCAL",
+    "topLabel": "MOST",
+    "bottomLabel": "LEAST",
+    "items": [
+      {
+        "id": "1",
+        "title": "BURGER KING TRIPLE WHOPPER",
+        "displayValue": "1,160 KCAL",
+        "numericValue": 1160
+      },
+      {
+        "id": "2",
+        "title": "WENDY'S BACONATOR",
+        "displayValue": "960 KCAL",
+        "numericValue": 960
+      },
+      {
+        "id": "3",
+        "title": "MCDONALD'S DBL QUARTER POUNDER",
+        "displayValue": "740 KCAL",
+        "numericValue": 740
+      },
+      {
+        "id": "4",
+        "title": "MCDONALD'S BIG MAC",
+        "displayValue": "590 KCAL",
+        "numericValue": 590
+      },
+      {
+        "id": "5",
+        "title": "CHICK-FIL-A CHICKEN SANDWICH",
+        "displayValue": "440 KCAL",
+        "numericValue": 440
+      },
+      {
+        "id": "6",
+        "title": "MCDONALD'S HASH BROWN",
+        "displayValue": "140 KCAL",
+        "numericValue": 140
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "date": "2026-09-06",
+    "title": "Native Language Speakers",
+    "unit": "MILLION",
+    "topLabel": "MOST",
+    "bottomLabel": "LEAST",
+    "items": [
+      {
+        "id": "1",
+        "title": "MANDARIN CHINESE",
+        "displayValue": "939 M",
+        "numericValue": 939
+      },
+      {
+        "id": "2",
+        "title": "SPANISH",
+        "displayValue": "485 M",
+        "numericValue": 485
+      },
+      {
+        "id": "3",
+        "title": "ENGLISH",
+        "displayValue": "380 M",
+        "numericValue": 380
+      },
+      {
+        "id": "4",
+        "title": "HINDI",
+        "displayValue": "345 M",
+        "numericValue": 345
+      },
+      {
+        "id": "5",
+        "title": "ARABIC",
+        "displayValue": "274 M",
+        "numericValue": 274
+      },
+      {
+        "id": "6",
+        "title": "FRENCH",
+        "displayValue": "80 M",
+        "numericValue": 80
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "date": "2026-09-07",
+    "title": "Tallest Structures",
+    "unit": "FEET",
+    "topLabel": "TALLEST",
+    "bottomLabel": "SHORTEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "BURJ KHALIFA",
+        "displayValue": "2,717 FT",
+        "numericValue": 2717
+      },
+      {
+        "id": "2",
+        "title": "MERDEKA 118",
+        "displayValue": "2,227 FT",
+        "numericValue": 2227
+      },
+      {
+        "id": "3",
+        "title": "SHANGHAI TOWER",
+        "displayValue": "2,073 FT",
+        "numericValue": 2073
+      },
+      {
+        "id": "4",
+        "title": "ONE WORLD TRADE CENTER",
+        "displayValue": "1,776 FT",
+        "numericValue": 1776
+      },
+      {
+        "id": "5",
+        "title": "EMPIRE STATE BUILDING",
+        "displayValue": "1,250 FT",
+        "numericValue": 1250
+      },
+      {
+        "id": "6",
+        "title": "EIFFEL TOWER",
+        "displayValue": "1,083 FT",
+        "numericValue": 1083
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "date": "2026-09-08",
+    "title": "The Periodic Table",
+    "unit": "ATOMIC NUMBER",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "URANIUM",
+        "displayValue": "92",
+        "numericValue": 92
+      },
+      {
+        "id": "2",
+        "title": "GOLD",
+        "displayValue": "79",
+        "numericValue": 79
+      },
+      {
+        "id": "3",
+        "title": "IRON",
+        "displayValue": "26",
+        "numericValue": 26
+      },
+      {
+        "id": "4",
+        "title": "OXYGEN",
+        "displayValue": "8",
+        "numericValue": 8
+      },
+      {
+        "id": "5",
+        "title": "CARBON",
+        "displayValue": "6",
+        "numericValue": 6
+      },
+      {
+        "id": "6",
+        "title": "HYDROGEN",
+        "displayValue": "1",
+        "numericValue": 1
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "date": "2026-09-09",
+    "title": "YouTube Subscriptions",
+    "unit": "MILLION",
+    "topLabel": "MOST",
+    "bottomLabel": "LEAST",
+    "items": [
+      {
+        "id": "1",
+        "title": "MRBEAST",
+        "displayValue": "270 M",
+        "numericValue": 270
+      },
+      {
+        "id": "2",
+        "title": "COCOMELON",
+        "displayValue": "176 M",
+        "numericValue": 176
+      },
+      {
+        "id": "3",
+        "title": "PEWDIEPIE",
+        "displayValue": "111 M",
+        "numericValue": 111
+      },
+      {
+        "id": "4",
+        "title": "DUDE PERFECT",
+        "displayValue": "60 M",
+        "numericValue": 60
+      },
+      {
+        "id": "5",
+        "title": "MARKIPLIER",
+        "displayValue": "36 M",
+        "numericValue": 36
+      },
+      {
+        "id": "6",
+        "title": "GORDON RAMSAY",
+        "displayValue": "20 M",
+        "numericValue": 20
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "date": "2026-09-10",
+    "title": "Corporate Empires",
+    "unit": "YEARS OLD",
+    "topLabel": "OLDEST",
+    "bottomLabel": "NEWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "NINTENDO",
+        "displayValue": "1889",
+        "numericValue": 137
+      },
+      {
+        "id": "2",
+        "title": "NIKE",
+        "displayValue": "1964",
+        "numericValue": 62
+      },
+      {
+        "id": "3",
+        "title": "APPLE",
+        "displayValue": "1976",
+        "numericValue": 50
+      },
+      {
+        "id": "4",
+        "title": "AMAZON",
+        "displayValue": "1994",
+        "numericValue": 32
+      },
+      {
+        "id": "5",
+        "title": "NETFLIX",
+        "displayValue": "1997",
+        "numericValue": 29
+      },
+      {
+        "id": "6",
+        "title": "TESLA",
+        "displayValue": "2003",
+        "numericValue": 23
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "date": "2026-09-11",
+    "title": "Dog Breed Weights",
+    "unit": "LBS",
+    "topLabel": "HEAVIEST",
+    "bottomLabel": "LIGHTEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "ENGLISH MASTIFF",
+        "displayValue": "230 LBS",
+        "numericValue": 230
+      },
+      {
+        "id": "2",
+        "title": "GREAT DANE",
+        "displayValue": "175 LBS",
+        "numericValue": 175
+      },
+      {
+        "id": "3",
+        "title": "GERMAN SHEPHERD",
+        "displayValue": "90 LBS",
+        "numericValue": 90
+      },
+      {
+        "id": "4",
+        "title": "GOLDEN RETRIEVER",
+        "displayValue": "75 LBS",
+        "numericValue": 75
+      },
+      {
+        "id": "5",
+        "title": "FRENCH BULLDOG",
+        "displayValue": "28 LBS",
+        "numericValue": 28
+      },
+      {
+        "id": "6",
+        "title": "CHIHUAHUA",
+        "displayValue": "6 LBS",
+        "numericValue": 6
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "date": "2026-09-12",
+    "title": "Epic Movie Runtimes",
+    "unit": "MINUTES",
+    "topLabel": "LONGEST",
+    "bottomLabel": "SHORTEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "LOTR: RETURN OF THE KING",
+        "displayValue": "201 MINS",
+        "numericValue": 201
+      },
+      {
+        "id": "2",
+        "title": "TITANIC",
+        "displayValue": "195 MINS",
+        "numericValue": 195
+      },
+      {
+        "id": "3",
+        "title": "AVENGERS: ENDGAME",
+        "displayValue": "181 MINS",
+        "numericValue": 181
+      },
+      {
+        "id": "4",
+        "title": "THE DARK KNIGHT",
+        "displayValue": "152 MINS",
+        "numericValue": 152
+      },
+      {
+        "id": "5",
+        "title": "STAR WARS: A NEW HOPE",
+        "displayValue": "121 MINS",
+        "numericValue": 121
+      },
+      {
+        "id": "6",
+        "title": "TOY STORY",
+        "displayValue": "81 MINS",
+        "numericValue": 81
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "date": "2026-09-13",
+    "title": "Distance from New York City",
+    "unit": "MILES",
+    "topLabel": "FARTHEST",
+    "bottomLabel": "CLOSEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "SYDNEY, AUSTRALIA",
+        "displayValue": "9,929 MILES",
+        "numericValue": 9929
+      },
+      {
+        "id": "2",
+        "title": "TOKYO, JAPAN",
+        "displayValue": "6,734 MILES",
+        "numericValue": 6734
+      },
+      {
+        "id": "3",
+        "title": "LONDON, UK",
+        "displayValue": "3,459 MILES",
+        "numericValue": 3459
+      },
+      {
+        "id": "4",
+        "title": "LOS ANGELES, CA",
+        "displayValue": "2,445 MILES",
+        "numericValue": 2445
+      },
+      {
+        "id": "5",
+        "title": "MIAMI, FL",
+        "displayValue": "1,093 MILES",
+        "numericValue": 1093
+      },
+      {
+        "id": "6",
+        "title": "PHILADELPHIA, PA",
+        "displayValue": "94 MILES",
+        "numericValue": 94
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "date": "2026-09-14",
+    "title": "Highest Grossing Tours",
+    "unit": "MILLION",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "TAYLOR SWIFT (ERAS)",
+        "displayValue": "$1,039 M",
+        "numericValue": 1039
+      },
+      {
+        "id": "2",
+        "title": "ELTON JOHN (FAREWELL)",
+        "displayValue": "$939 M",
+        "numericValue": 939
+      },
+      {
+        "id": "3",
+        "title": "COLDPLAY (MUSIC OF THE SPHERES)",
+        "displayValue": "$810 M",
+        "numericValue": 810
+      },
+      {
+        "id": "4",
+        "title": "ED SHEERAN (THE \u00f7 TOUR)",
+        "displayValue": "$776 M",
+        "numericValue": 776
+      },
+      {
+        "id": "5",
+        "title": "U2 (U2 360\u00b0)",
+        "displayValue": "$736 M",
+        "numericValue": 736
+      },
+      {
+        "id": "6",
+        "title": "BEYONC\u00c9 (RENAISSANCE)",
+        "displayValue": "$579 M",
+        "numericValue": 579
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "date": "2026-09-15",
+    "title": "Highest Peaks Per Continent",
+    "unit": "FEET",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "ASIA (MT. EVEREST)",
+        "displayValue": "29,032 FT",
+        "numericValue": 29032
+      },
+      {
+        "id": "2",
+        "title": "S. AMERICA (ACONCAGUA)",
+        "displayValue": "22,837 FT",
+        "numericValue": 22837
+      },
+      {
+        "id": "3",
+        "title": "N. AMERICA (DENALI)",
+        "displayValue": "20,310 FT",
+        "numericValue": 20310
+      },
+      {
+        "id": "4",
+        "title": "AFRICA (KILIMANJARO)",
+        "displayValue": "19,341 FT",
+        "numericValue": 19341
+      },
+      {
+        "id": "5",
+        "title": "EUROPE (MT. ELBRUS)",
+        "displayValue": "18,510 FT",
+        "numericValue": 18510
+      },
+      {
+        "id": "6",
+        "title": "ANTARCTICA (VINSON MASSIF)",
+        "displayValue": "16,050 FT",
+        "numericValue": 16050
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "date": "2026-09-16",
+    "title": "Vertical Marvels: Man-Made Heights",
+    "unit": "Height in Meters",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Eiffel Tower",
+        "displayValue": "330 m",
+        "numericValue": 330.0
+      },
+      {
+        "id": "2",
+        "title": "Empire State Building",
+        "displayValue": "381 m",
+        "numericValue": 381.0
+      },
+      {
+        "id": "3",
+        "title": "Statue of Liberty (with pedestal)",
+        "displayValue": "93 m",
+        "numericValue": 93.0
+      },
+      {
+        "id": "4",
+        "title": "Great Pyramid of Giza",
+        "displayValue": "138.5 m",
+        "numericValue": 138.5
+      },
+      {
+        "id": "5",
+        "title": "Minaret of Jam",
+        "displayValue": "65 m",
+        "numericValue": 65.0
+      },
+      {
+        "id": "6",
+        "title": "Jeddah Tower (under construction)",
+        "displayValue": "1,000 m",
+        "numericValue": 1000.0
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "date": "2026-09-17",
+    "title": "Terrestrial Velocity: Speed Demons",
+    "unit": "Top Speed in km/h",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Cheetah",
+        "displayValue": "120 km/h",
+        "numericValue": 120.0
+      },
+      {
+        "id": "2",
+        "title": "Usain Bolt (Peak Sprint)",
+        "displayValue": "44.72 km/h",
+        "numericValue": 44.72
+      },
+      {
+        "id": "3",
+        "title": "Bugatti Chiron Super Sport",
+        "displayValue": "490.48 km/h",
+        "numericValue": 490.48
+      },
+      {
+        "id": "4",
+        "title": "Black Mamba",
+        "displayValue": "19 km/h",
+        "numericValue": 19.0
+      },
+      {
+        "id": "5",
+        "title": "Pronghorn Antelope",
+        "displayValue": "88.5 km/h",
+        "numericValue": 88.5
+      },
+      {
+        "id": "6",
+        "title": "Percebes Beetle Larva Drift",
+        "displayValue": "0.05 km/h",
+        "numericValue": 0.05
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "date": "2026-09-18",
+    "title": "Cinematic Titans: Box Office Hits",
+    "unit": "Worldwide Box Office Gross in Millions USD",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Avatar (2009)",
+        "displayValue": "$2,923M",
+        "numericValue": 2923.0
+      },
+      {
+        "id": "2",
+        "title": "Titanic (1997)",
+        "displayValue": "$2,264M",
+        "numericValue": 2264.0
+      },
+      {
+        "id": "3",
+        "title": "The Avengers (2012)",
+        "displayValue": "$1,520M",
+        "numericValue": 1520.0
+      },
+      {
+        "id": "4",
+        "title": "Avengers: Endgame (2019)",
+        "displayValue": "$2,799M",
+        "numericValue": 2799.0
+      },
+      {
+        "id": "5",
+        "title": "The Battle of Lake Changjin",
+        "displayValue": "$913M",
+        "numericValue": 913.0
+      },
+      {
+        "id": "6",
+        "title": "Wolf Warrior 2",
+        "displayValue": "$870M",
+        "numericValue": 870.0
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "date": "2026-09-19",
+    "title": "Thermodynamic Extremes: Boiling Points",
+    "unit": "Boiling Point in Degrees Celsius",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Water (at sea level)",
+        "displayValue": "100 \u00b0C",
+        "numericValue": 100.0
+      },
+      {
+        "id": "2",
+        "title": "Water (at Mt. Everest summit)",
+        "displayValue": "68 \u00b0C (at 8,848m)",
+        "numericValue": 68.0
+      },
+      {
+        "id": "3",
+        "title": "Ethanol",
+        "displayValue": "78.37 \u00b0C",
+        "numericValue": 78.37
+      },
+      {
+        "id": "4",
+        "title": "Liquid Nitrogen",
+        "displayValue": "-195.79 \u00b0C",
+        "numericValue": -195.79
+      },
+      {
+        "id": "5",
+        "title": "Gallium",
+        "displayValue": "2,229 \u00b0C",
+        "numericValue": 2229.0
+      },
+      {
+        "id": "6",
+        "title": "Rhenium",
+        "displayValue": "5,596 \u00b0C",
+        "numericValue": 5596.0
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "date": "2026-09-20",
+    "title": "Biological Clock: Animal Lifespans",
+    "unit": "Average Lifespan in Years",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Mayfly (Adult)",
+        "displayValue": "0.003 years (24 hours)",
+        "numericValue": 0.003
+      },
+      {
+        "id": "2",
+        "title": "Galapagos Tortoise",
+        "displayValue": "120 years",
+        "numericValue": 120.0
+      },
+      {
+        "id": "3",
+        "title": "Bowhead Whale",
+        "displayValue": "200 years",
+        "numericValue": 200.0
+      },
+      {
+        "id": "4",
+        "title": "Average Human (Global)",
+        "displayValue": "73 years",
+        "numericValue": 73.0
+      },
+      {
+        "id": "5",
+        "title": "Ocean Quahog Clam",
+        "displayValue": "507 years",
+        "numericValue": 507.0
+      },
+      {
+        "id": "6",
+        "title": "Olme Salamander",
+        "displayValue": "68 years",
+        "numericValue": 68.0
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "date": "2026-09-21",
+    "title": "Abyssal Depths: Earth's Basements",
+    "unit": "Maximum Depth in Meters",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Grand Canyon",
+        "displayValue": "1,857 m",
+        "numericValue": 1857.0
+      },
+      {
+        "id": "2",
+        "title": "Lake Baikal",
+        "displayValue": "1,642 m",
+        "numericValue": 1642.0
+      },
+      {
+        "id": "3",
+        "title": "Challenger Deep",
+        "displayValue": "10,994 m",
+        "numericValue": 10994.0
+      },
+      {
+        "id": "4",
+        "title": "Kola Superdeep Borehole",
+        "displayValue": "12,262 m",
+        "numericValue": 12262.0
+      },
+      {
+        "id": "5",
+        "title": "Veryovkina Cave",
+        "displayValue": "2,212 m",
+        "numericValue": 2212.0
+      },
+      {
+        "id": "6",
+        "title": "Milwaukee Deep",
+        "displayValue": "8,376 m",
+        "numericValue": 8376.0
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "date": "2026-09-22",
+    "title": "The Near-Miss Gauntlet: Longest Rivers",
+    "unit": "Length in Kilometers",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Nile River",
+        "displayValue": "6,650 km",
+        "numericValue": 6650.0
+      },
+      {
+        "id": "2",
+        "title": "Amazon River",
+        "displayValue": "6,575 km",
+        "numericValue": 6575.0
+      },
+      {
+        "id": "3",
+        "title": "Yangtze River",
+        "displayValue": "6,300 km",
+        "numericValue": 6300.0
+      },
+      {
+        "id": "4",
+        "title": "Mississippi River",
+        "displayValue": "6,275 km",
+        "numericValue": 6275.0
+      },
+      {
+        "id": "5",
+        "title": "Yenisey River",
+        "displayValue": "5,539 km",
+        "numericValue": 5539.0
+      },
+      {
+        "id": "6",
+        "title": "Yellow River (Huang He)",
+        "displayValue": "5,464 km",
+        "numericValue": 5464.0
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "date": "2026-09-23",
+    "title": "Nutritional Fuel: Caloric Content",
+    "unit": "Total Calories (kcal)",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Big Mac",
+        "displayValue": "563 kcal",
+        "numericValue": 563.0
+      },
+      {
+        "id": "2",
+        "title": "Avocado (Whole Medium)",
+        "displayValue": "240 kcal",
+        "numericValue": 240.0
+      },
+      {
+        "id": "3",
+        "title": "Stick of Butter (113g)",
+        "displayValue": "810 kcal",
+        "numericValue": 810.0
+      },
+      {
+        "id": "4",
+        "title": "Recommended Daily Adult Male Intake",
+        "displayValue": "2,500 kcal",
+        "numericValue": 2500.0
+      },
+      {
+        "id": "5",
+        "title": "Durian Fruit (Whole Medium)",
+        "displayValue": "1,350 kcal",
+        "numericValue": 1350.0
+      },
+      {
+        "id": "6",
+        "title": "Pemmican (100g Bar)",
+        "displayValue": "575 kcal",
+        "numericValue": 575.0
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "date": "2026-09-24",
+    "title": "Cosmic Speeds: Spacecraft Trajectories",
+    "unit": "Top Speed in Kilometers per Second",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Space Shuttle Orbiting Earth",
+        "displayValue": "7.8 km/s",
+        "numericValue": 7.8
+      },
+      {
+        "id": "2",
+        "title": "Voyager 1",
+        "displayValue": "17.0 km/s",
+        "numericValue": 17.0
+      },
+      {
+        "id": "3",
+        "title": "Apollo 11 Command Module (Re-entry)",
+        "displayValue": "11.1 km/s",
+        "numericValue": 11.1
+      },
+      {
+        "id": "4",
+        "title": "Apollo 10 Command Module (Peak Speed)",
+        "displayValue": "11.08 km/s",
+        "numericValue": 11.08
+      },
+      {
+        "id": "5",
+        "title": "Parker Solar Probe (Peak Heliocentric)",
+        "displayValue": "176.0 km/s",
+        "numericValue": 176.0
+      },
+      {
+        "id": "6",
+        "title": "New Horizons (Pluto Flyby)",
+        "displayValue": "13.78 km/s",
+        "numericValue": 13.78
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "date": "2026-09-25",
+    "title": "Insular Communities: Island Populations",
+    "unit": "Total Population",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Manhattan",
+        "displayValue": "1.63 Million",
+        "numericValue": 1630000.0
+      },
+      {
+        "id": "2",
+        "title": "Greenland",
+        "displayValue": "56,600",
+        "numericValue": 56600.0
+      },
+      {
+        "id": "3",
+        "title": "Java",
+        "displayValue": "151.6 Million",
+        "numericValue": 151600000.0
+      },
+      {
+        "id": "4",
+        "title": "Iceland",
+        "displayValue": "388,000",
+        "numericValue": 388000.0
+      },
+      {
+        "id": "5",
+        "title": "Tristan da Cunha",
+        "displayValue": "238",
+        "numericValue": 238.0
+      },
+      {
+        "id": "6",
+        "title": "Pitcairn Island",
+        "displayValue": "47",
+        "numericValue": 47.0
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "date": "2026-09-26",
+    "title": "Aquatic Footprint: Daily Usage",
+    "unit": "Water Volume in Liters",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Standard Toilet Flush",
+        "displayValue": "6 Liters",
+        "numericValue": 6.0
+      },
+      {
+        "id": "2",
+        "title": "Average 10-Minute Shower",
+        "displayValue": "75 Liters",
+        "numericValue": 75.0
+      },
+      {
+        "id": "3",
+        "title": "Daily Per Capita Household Water Use (US)",
+        "displayValue": "300 Liters",
+        "numericValue": 300.0
+      },
+      {
+        "id": "4",
+        "title": "Production of 1 Hamburger Patty (150g)",
+        "displayValue": "2,250 Liters",
+        "numericValue": 2250.0
+      },
+      {
+        "id": "5",
+        "title": "Production of 1 Cup of Coffee (125ml)",
+        "displayValue": "140 Liters",
+        "numericValue": 140.0
+      },
+      {
+        "id": "6",
+        "title": "Olympic Swimming Pool Volume",
+        "displayValue": "2,500,000 Liters",
+        "numericValue": 2500000.0
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "date": "2026-09-27",
+    "title": "Mammalian Mass: Heavyweights",
+    "unit": "Weight in Kilograms",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "African Bush Elephant",
+        "displayValue": "6,000 kg",
+        "numericValue": 6000.0
+      },
+      {
+        "id": "2",
+        "title": "Blue Whale",
+        "displayValue": "150,000 kg",
+        "numericValue": 150000.0
+      },
+      {
+        "id": "3",
+        "title": "Hippopotamus",
+        "displayValue": "1,500 kg",
+        "numericValue": 1500.0
+      },
+      {
+        "id": "4",
+        "title": "White Rhinoceros",
+        "displayValue": "2,300 kg",
+        "numericValue": 2300.0
+      },
+      {
+        "id": "5",
+        "title": "Sunda Pangolin",
+        "displayValue": "8 kg",
+        "numericValue": 8.0
+      },
+      {
+        "id": "6",
+        "title": "Kitti's Hog-Nosed Bat",
+        "displayValue": "0.002 kg (2g)",
+        "numericValue": 0.002
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "date": "2026-09-28",
+    "title": "Planetary Climate: Surface Temperatures",
+    "unit": "Mean Surface Temperature in Degrees Celsius",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Earth",
+        "displayValue": "15 \u00b0C",
+        "numericValue": 15.0
+      },
+      {
+        "id": "2",
+        "title": "Mars",
+        "displayValue": "-62 \u00b0C",
+        "numericValue": -62.0
+      },
+      {
+        "id": "3",
+        "title": "Venus",
+        "displayValue": "464 \u00b0C",
+        "numericValue": 464.0
+      },
+      {
+        "id": "4",
+        "title": "Mercury (Daytime)",
+        "displayValue": "430 \u00b0C (Day)",
+        "numericValue": 430.0
+      },
+      {
+        "id": "5",
+        "title": "Titan (Saturn's Moon)",
+        "displayValue": "-179 \u00b0C",
+        "numericValue": -179.0
+      },
+      {
+        "id": "6",
+        "title": "Triton (Neptune's Moon)",
+        "displayValue": "-235 \u00b0C",
+        "numericValue": -235.0
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "date": "2026-09-29",
+    "title": "The Micro-Scale Sort: Microscopic World",
+    "unit": "Diameter in Micrometers",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Human Hair Strand Width",
+        "displayValue": "70 \u03bcm",
+        "numericValue": 70.0
+      },
+      {
+        "id": "2",
+        "title": "Human Red Blood Cell",
+        "displayValue": "8 \u03bcm",
+        "numericValue": 8.0
+      },
+      {
+        "id": "3",
+        "title": "E. coli Bacterium",
+        "displayValue": "2 \u03bcm",
+        "numericValue": 2.0
+      },
+      {
+        "id": "4",
+        "title": "SARS-CoV-2 Virus Particle",
+        "displayValue": "0.1 \u03bcm",
+        "numericValue": 0.1
+      },
+      {
+        "id": "5",
+        "title": "PM2.5 Airborne Particulate",
+        "displayValue": "2.5 \u03bcm",
+        "numericValue": 2.5
+      },
+      {
+        "id": "6",
+        "title": "Mycoplasma Genitalium Cell",
+        "displayValue": "0.3 \u03bcm",
+        "numericValue": 0.3
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "date": "2026-09-30",
+    "title": "Architectural Span: Bridge Timelines",
+    "unit": "Year Completed",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Brooklyn Bridge",
+        "displayValue": "1883 AD",
+        "numericValue": 1883.0
+      },
+      {
+        "id": "2",
+        "title": "Golden Gate Bridge",
+        "displayValue": "1937 AD",
+        "numericValue": 1937.0
+      },
+      {
+        "id": "3",
+        "title": "Tower Bridge (London)",
+        "displayValue": "1894 AD",
+        "numericValue": 1894.0
+      },
+      {
+        "id": "4",
+        "title": "Ponte Vecchio",
+        "displayValue": "1345 AD",
+        "numericValue": 1345.0
+      },
+      {
+        "id": "5",
+        "title": "Anji Bridge",
+        "displayValue": "605 AD",
+        "numericValue": 605.0
+      },
+      {
+        "id": "6",
+        "title": "Caravan Bridge",
+        "displayValue": "850 BC",
+        "numericValue": -850.0
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "date": "2026-10-01",
+    "title": "Environmental Impact: Carbon Footprints",
+    "unit": "Kilograms of CO2 Equivalent",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Roundtrip Flight: London to New York",
+        "displayValue": "986 kg",
+        "numericValue": 986.0
+      },
+      {
+        "id": "2",
+        "title": "1 Beef Steak (8 oz / 225g)",
+        "displayValue": "7.7 kg",
+        "numericValue": 7.7
+      },
+      {
+        "id": "3",
+        "title": "1 Year of Driving Average Gasoline Car",
+        "displayValue": "4,600 kg",
+        "numericValue": 4600.0
+      },
+      {
+        "id": "4",
+        "title": "1 Pair of Leather Shoes",
+        "displayValue": "14 kg",
+        "numericValue": 14.0
+      },
+      {
+        "id": "5",
+        "title": "1 Cotton T-Shirt",
+        "displayValue": "5.5 kg",
+        "numericValue": 5.5
+      },
+      {
+        "id": "6",
+        "title": "Streaming 1 Hour of HD Video",
+        "displayValue": "0.036 kg",
+        "numericValue": 0.036
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "date": "2026-10-02",
+    "title": "Literary Giants: Lifetime Book Sales",
+    "unit": "Estimated Copies Sold in Millions",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "The Bible",
+        "displayValue": "5,000 Million",
+        "numericValue": 5000.0
+      },
+      {
+        "id": "2",
+        "title": "Don Quixote",
+        "displayValue": "500 Million",
+        "numericValue": 500.0
+      },
+      {
+        "id": "3",
+        "title": "Harry Potter and the Philosopher's Stone",
+        "displayValue": "120 Million",
+        "numericValue": 120.0
+      },
+      {
+        "id": "4",
+        "title": "The Lord of the Rings (Trilogy Total)",
+        "displayValue": "150 Million",
+        "numericValue": 150.0
+      },
+      {
+        "id": "5",
+        "title": "The Little Prince (Le Petit Prince)",
+        "displayValue": "200 Million",
+        "numericValue": 200.0
+      },
+      {
+        "id": "6",
+        "title": "Xinhua Dictionary",
+        "displayValue": "567 Million",
+        "numericValue": 567.0
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "date": "2026-10-03",
+    "title": "Aerodynamic Wingspan: Nature vs Aviation",
+    "unit": "Wingspan in Meters",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Wandering Albatross",
+        "displayValue": "3.5 m",
+        "numericValue": 3.5
+      },
+      {
+        "id": "2",
+        "title": "Boeing 747-8",
+        "displayValue": "68.4 m",
+        "numericValue": 68.4
+      },
+      {
+        "id": "3",
+        "title": "Airbus A380",
+        "displayValue": "79.75 m",
+        "numericValue": 79.75
+      },
+      {
+        "id": "4",
+        "title": "California Condor",
+        "displayValue": "2.9 m",
+        "numericValue": 2.9
+      },
+      {
+        "id": "5",
+        "title": "Quetzalcoatlus northropi (Pterosaur)",
+        "displayValue": "11.0 m",
+        "numericValue": 11.0
+      },
+      {
+        "id": "6",
+        "title": "Scales Composites Stratolaunch",
+        "displayValue": "117.0 m",
+        "numericValue": 117.0
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "date": "2026-10-04",
+    "title": "Elevated Cities: Capital Altitudes",
+    "unit": "Elevation in Meters above Sea Level",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "La Paz (Bolivia)",
+        "displayValue": "3,640 m",
+        "numericValue": 3640.0
+      },
+      {
+        "id": "2",
+        "title": "Quito (Ecuador)",
+        "displayValue": "2,850 m",
+        "numericValue": 2850.0
+      },
+      {
+        "id": "3",
+        "title": "Mexico City (Mexico)",
+        "displayValue": "2,240 m",
+        "numericValue": 2240.0
+      },
+      {
+        "id": "4",
+        "title": "Amsterdam (Netherlands)",
+        "displayValue": "-2 m",
+        "numericValue": -2.0
+      },
+      {
+        "id": "5",
+        "title": "Thimphu (Bhutan)",
+        "displayValue": "2,320 m",
+        "numericValue": 2320.0
+      },
+      {
+        "id": "6",
+        "title": "Addis Ababa (Ethiopia)",
+        "displayValue": "2,355 m",
+        "numericValue": 2355.0
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "date": "2026-10-05",
+    "title": "Volcanic Fury: Eruption Volumes",
+    "unit": "Eruptive Volume in Cubic Kilometers",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Mount St. Helens (1980)",
+        "displayValue": "1.3 km\u00b3",
+        "numericValue": 1.3
+      },
+      {
+        "id": "2",
+        "title": "Mount Vesuvius (79 AD)",
+        "displayValue": "3.3 km\u00b3",
+        "numericValue": 3.3
+      },
+      {
+        "id": "3",
+        "title": "Krakatoa (1883)",
+        "displayValue": "25 km\u00b3",
+        "numericValue": 25.0
+      },
+      {
+        "id": "4",
+        "title": "Mount Pinatubo (1991)",
+        "displayValue": "10 km\u00b3",
+        "numericValue": 10.0
+      },
+      {
+        "id": "5",
+        "title": "Mount Tambora (1815)",
+        "displayValue": "175 km\u00b3",
+        "numericValue": 175.0
+      },
+      {
+        "id": "6",
+        "title": "Lake Toba Supereruption (74,000 BP)",
+        "displayValue": "2,800 km\u00b3",
+        "numericValue": 2800.0
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "date": "2026-10-06",
+    "title": "David vs Goliath: Mass Comparison",
+    "unit": "Mass in Metric Tons",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "All Ants on Earth Combined",
+        "displayValue": "12,000,000 tons",
+        "numericValue": 12000000.0
+      },
+      {
+        "id": "2",
+        "title": "Great Pyramid of Giza (Stone Mass)",
+        "displayValue": "6,000,000 tons",
+        "numericValue": 6000000.0
+      },
+      {
+        "id": "3",
+        "title": "All Humans on Earth Combined",
+        "displayValue": "390,000,000 tons",
+        "numericValue": 390000000.0
+      },
+      {
+        "id": "4",
+        "title": "International Space Station",
+        "displayValue": "450 tons",
+        "numericValue": 450.0
+      },
+      {
+        "id": "5",
+        "title": "Pando Aspen Grove Root System",
+        "displayValue": "6,000 tons",
+        "numericValue": 6000.0
+      },
+      {
+        "id": "6",
+        "title": "Three Gorges Dam Concrete Mass",
+        "displayValue": "65,500,000 tons",
+        "numericValue": 65500000.0
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "date": "2026-10-07",
+    "title": "Energy Consumption: Annual Power",
+    "unit": "Electricity Consumption in Gigawatt-Hours",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Bitcoin Mining Network (Global 1 Year)",
+        "displayValue": "120,000 GWh",
+        "numericValue": 120000.0
+      },
+      {
+        "id": "2",
+        "title": "Iceland (Entire Nation 1 Year)",
+        "displayValue": "19,000 GWh",
+        "numericValue": 19000.0
+      },
+      {
+        "id": "3",
+        "title": "Average US Household (1 Year)",
+        "displayValue": "0.0106 GWh",
+        "numericValue": 0.0106
+      },
+      {
+        "id": "4",
+        "title": "Las Vegas Strip Casinos (1 Year)",
+        "displayValue": "8,000 GWh",
+        "numericValue": 8000.0
+      },
+      {
+        "id": "5",
+        "title": "CERN Large Hadron Collider (1 Year)",
+        "displayValue": "1,300 GWh",
+        "numericValue": 1300.0
+      },
+      {
+        "id": "6",
+        "title": "Liechtenstein (Entire Nation 1 Year)",
+        "displayValue": "400 GWh",
+        "numericValue": 400.0
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "date": "2026-10-08",
+    "title": "Auction House Masterpieces: Art Prices",
+    "unit": "Hammer Price in Millions USD",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Salvator Mundi (Leonardo da Vinci)",
+        "displayValue": "$450.3M",
+        "numericValue": 450.3
+      },
+      {
+        "id": "2",
+        "title": "Mona Lisa (Estimated Value)",
+        "displayValue": "$860M (Insurance Valuation)",
+        "numericValue": 860.0
+      },
+      {
+        "id": "3",
+        "title": "Les Femmes d'Alger (Picasso)",
+        "displayValue": "$179.4M",
+        "numericValue": 179.4
+      },
+      {
+        "id": "4",
+        "title": "The Scream (Edvard Munch)",
+        "displayValue": "$119.9M",
+        "numericValue": 119.9
+      },
+      {
+        "id": "5",
+        "title": "Interchange (Willem de Kooning)",
+        "displayValue": "$300M",
+        "numericValue": 300.0
+      },
+      {
+        "id": "6",
+        "title": "Pendant portraits of Marten Soolmans and Oopjen Coppit (Rembrandt)",
+        "displayValue": "$180M",
+        "numericValue": 180.0
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "date": "2026-10-09",
+    "title": "Long-Haul Aviation: Non-Stop Flights",
+    "unit": "Scheduled Flight Duration in Hours",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "New York (JFK) to Singapore (SIN)",
+        "displayValue": "18.75 Hours",
+        "numericValue": 18.75
+      },
+      {
+        "id": "2",
+        "title": "London (LHR) to Perth (PER)",
+        "displayValue": "17.5 Hours",
+        "numericValue": 17.5
+      },
+      {
+        "id": "3",
+        "title": "Los Angeles (LAX) to Tokyo (NRT)",
+        "displayValue": "11.5 Hours",
+        "numericValue": 11.5
+      },
+      {
+        "id": "4",
+        "title": "Paris (CDG) to Reunion Island (RUN)",
+        "displayValue": "11.25 Hours",
+        "numericValue": 11.25
+      },
+      {
+        "id": "5",
+        "title": "Auckland (AKL) to Doha (DOH)",
+        "displayValue": "17.67 Hours",
+        "numericValue": 17.67
+      },
+      {
+        "id": "6",
+        "title": "Houston (IAH) to Sydney (SYD)",
+        "displayValue": "17.58 Hours",
+        "numericValue": 17.58
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "date": "2026-10-10",
+    "title": "Islands of the Earth: Landmass Area",
+    "unit": "Surface Area in Square Kilometers",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Greenland Landmass",
+        "displayValue": "2,166,086 sq km",
+        "numericValue": 2166086.0
+      },
+      {
+        "id": "2",
+        "title": "Madagascar",
+        "displayValue": "587,041 sq km",
+        "numericValue": 587041.0
+      },
+      {
+        "id": "3",
+        "title": "Great Britain",
+        "displayValue": "209,331 sq km",
+        "numericValue": 209331.0
+      },
+      {
+        "id": "4",
+        "title": "Australia (Mainland)",
+        "displayValue": "7,692,024 sq km (Continent)",
+        "numericValue": 7692024.0
+      },
+      {
+        "id": "5",
+        "title": "Baffin Island",
+        "displayValue": "507,451 sq km",
+        "numericValue": 507451.0
+      },
+      {
+        "id": "6",
+        "title": "New Guinea",
+        "displayValue": "785,753 sq km",
+        "numericValue": 785753.0
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "date": "2026-10-11",
+    "title": "Portable Energy: Battery Capacities",
+    "unit": "Capacity in Milliampere-Hours (mAh)",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "AA Rechargeable Battery",
+        "displayValue": "2,500 mAh",
+        "numericValue": 2500.0
+      },
+      {
+        "id": "2",
+        "title": "iPhone 15 Pro",
+        "displayValue": "3,274 mAh",
+        "numericValue": 3274.0
+      },
+      {
+        "id": "3",
+        "title": "iPad Pro 12.9-inch",
+        "displayValue": "10,758 mAh",
+        "numericValue": 10758.0
+      },
+      {
+        "id": "4",
+        "title": "Tesla Model 3 Battery Pack (350V equivalent)",
+        "displayValue": "230,000 mAh",
+        "numericValue": 230000.0
+      },
+      {
+        "id": "5",
+        "title": "Apple Watch Series 9",
+        "displayValue": "308 mAh",
+        "numericValue": 308.0
+      },
+      {
+        "id": "6",
+        "title": "Nintendo Switch OLED",
+        "displayValue": "4,310 mAh",
+        "numericValue": 4310.0
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "date": "2026-10-12",
+    "title": "Material Strength: Ultimate Tensile Limits",
+    "unit": "Tensile Strength in Megapascals (MPa)",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Structural Steel",
+        "displayValue": "400 MPa",
+        "numericValue": 400.0
+      },
+      {
+        "id": "2",
+        "title": "Spider Dragline Silk",
+        "displayValue": "1,000 MPa",
+        "numericValue": 1000.0
+      },
+      {
+        "id": "3",
+        "title": "Kevlar 29",
+        "displayValue": "3,600 MPa",
+        "numericValue": 3600.0
+      },
+      {
+        "id": "4",
+        "title": "Human Tooth Enamel",
+        "displayValue": "10 MPa",
+        "numericValue": 10.0
+      },
+      {
+        "id": "5",
+        "title": "Carbon Nanotube (Single Wall)",
+        "displayValue": "62,000 MPa",
+        "numericValue": 62000.0
+      },
+      {
+        "id": "6",
+        "title": "Limpet Tooth Structure",
+        "displayValue": "4,900 MPa",
+        "numericValue": 4900.0
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "date": "2026-10-13",
+    "title": "The Lifespan Lottery: Radioactive Half-Lives",
+    "unit": "Half-Life in Years",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Carbon-14",
+        "displayValue": "5,730 Years",
+        "numericValue": 5730.0
+      },
+      {
+        "id": "2",
+        "title": "Uranium-238",
+        "displayValue": "4.47 Billion Years",
+        "numericValue": 4468000000.0
+      },
+      {
+        "id": "3",
+        "title": "Plutonium-239",
+        "displayValue": "24,110 Years",
+        "numericValue": 24110.0
+      },
+      {
+        "id": "4",
+        "title": "Cesium-137",
+        "displayValue": "30.17 Years",
+        "numericValue": 30.17
+      },
+      {
+        "id": "5",
+        "title": "Polonium-210",
+        "displayValue": "0.38 Years (138 Days)",
+        "numericValue": 0.38
+      },
+      {
+        "id": "6",
+        "title": "Bismuth-209",
+        "displayValue": "19 Quintillion Years",
+        "numericValue": 1.9e+19
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "date": "2026-10-14",
+    "title": "Chart Toppers: Worldwide Certified Albums",
+    "unit": "Certified Sales in Millions",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Thriller (Michael Jackson)",
+        "displayValue": "70 Million",
+        "numericValue": 70.0
+      },
+      {
+        "id": "2",
+        "title": "Back in Black (AC/DC)",
+        "displayValue": "50 Million",
+        "numericValue": 50.0
+      },
+      {
+        "id": "3",
+        "title": "The Dark Side of the Moon (Pink Floyd)",
+        "displayValue": "45 Million",
+        "numericValue": 45.0
+      },
+      {
+        "id": "4",
+        "title": "The Wall (Pink Floyd)",
+        "displayValue": "30 Million",
+        "numericValue": 30.0
+      },
+      {
+        "id": "5",
+        "title": "Come On Over (Shania Twain)",
+        "displayValue": "40 Million",
+        "numericValue": 40.0
+      },
+      {
+        "id": "6",
+        "title": "Eagles Their Greatest Hits (1971-1975)",
+        "displayValue": "44 Million",
+        "numericValue": 44.0
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "date": "2026-10-15",
+    "title": "Sweet Intake: Beverage Sugar Content",
+    "unit": "Sugar in Grams per 12 oz (355 ml) Serving",
+    "topLabel": "HIGHEST",
+    "bottomLabel": "LOWEST",
+    "items": [
+      {
+        "id": "1",
+        "title": "Coca-Cola Classic",
+        "displayValue": "39 grams",
+        "numericValue": 39.0
+      },
+      {
+        "id": "2",
+        "title": "Mountain Dew",
+        "displayValue": "46 grams",
+        "numericValue": 46.0
+      },
+      {
+        "id": "3",
+        "title": "100% Orange Juice",
+        "displayValue": "36 grams",
+        "numericValue": 36.0
+      },
+      {
+        "id": "4",
+        "title": "Red Bull Energy Drink",
+        "displayValue": "37 grams",
+        "numericValue": 37.0
+      },
+      {
+        "id": "5",
+        "title": "Whole Milk",
+        "displayValue": "18 grams",
+        "numericValue": 18.0
+      },
+      {
+        "id": "6",
+        "title": "Coconut Water (Unsweetened)",
+        "displayValue": "14 grams",
+        "numericValue": 14.0
+      }
+    ]
+  }
+]

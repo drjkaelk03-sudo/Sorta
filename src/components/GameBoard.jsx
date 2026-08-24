@@ -4,7 +4,7 @@ import { Share, Volume2, VolumeX, BarChart2 } from 'lucide-react';
 
 // External Local Imports
 import GameTile from './GameTile';
-import StatsModal from './StatsModal';
+import StatsModal from './StatsModal'; // <--- THIS WAS MISSING
 import { getPlayerStats, savePlayerStats } from '../utils/storage';
 import { initAudio, playAudio, triggerHaptic } from '../utils/audio';
 import { useTelemetry, getOrCreateAnonId } from '../utils/telemetry';

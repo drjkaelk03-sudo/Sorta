@@ -22,12 +22,11 @@ const EMERGENCY_PUZZLE = {
 };
 
 // ==========================================
-// APP COMPONENT (DATA FETCHER & TIME KEEPER)
+// APP COMPONENT
 // ==========================================
 export default function App() {
   const [dailyPuzzle, setDailyPuzzle] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
   useEffect(() => {
     const loadAndCheckPuzzle = async () => {
@@ -38,8 +37,6 @@ export default function App() {
         if (!response.ok) throw new Error('Failed to load puzzle');
         const serverPuzzle = await response.json();
 
-        // FIX #2: Storage Quota Crashes
-        // Wraps the cache setting in a try/catch in case the user's phone storage is 100% full
         try {
           if (typeof window !== 'undefined') {
             localStorage.setItem('sorta_daily_cache', JSON.stringify({
@@ -47,29 +44,16 @@ export default function App() {
               puzzle: serverPuzzle
             }));
           }
-        } catch (storageErr) {
-          console.warn("Storage quota exceeded, skipping local cache saving.");
-        }
+        } catch (storageErr) {}
 
-        setDailyPuzzle(currentPuzzle => {
-          // FIX #1: The Midnight Wipeout
-          // If the app is loading for the first time, set the puzzle.
-          if (!currentPuzzle) return serverPuzzle;
-          // If they already have a puzzle loaded on their screen, DO NOT overwrite it.
-          // This allows them to finish their midnight game. They will get tomorrow's puzzle on refresh.
-          return currentPuzzle;
-        });
-        
+        setDailyPuzzle(currentPuzzle => !currentPuzzle ? serverPuzzle : currentPuzzle);
         setLoading(false);
       } catch (err) {
-        console.error("Network Fetch Failed", err);
-        
         try {
           const cached = localStorage.getItem('sorta_daily_cache');
           if (cached) {
             const { puzzle, timestamp } = JSON.parse(cached);
             if (Date.now() - timestamp < 86400000) {
-              console.log("Loaded puzzle from local offline cache");
               setDailyPuzzle(puzzle);
               setLoading(false);
               return;
@@ -77,30 +61,18 @@ export default function App() {
           }
         } catch(cacheErr) {}
 
-        console.warn("Deploying Emergency Failsafe Puzzle");
         setDailyPuzzle(EMERGENCY_PUZZLE);
         setLoading(false);
       }
     };
 
     loadAndCheckPuzzle();
-
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        loadAndCheckPuzzle();
-      }
-    };
-
-    const preventSafariZoom = (e) => {
-      if (e.touches && e.touches.length > 1) {
-        e.preventDefault();
-      }
-    };
+    const handleVisibilityChange = () => document.visibilityState === 'visible' && loadAndCheckPuzzle();
+    const preventSafariZoom = (e) => e.touches && e.touches.length > 1 && e.preventDefault();
 
     window.addEventListener('focus', loadAndCheckPuzzle);
     document.addEventListener('visibilitychange', handleVisibilityChange);
     document.addEventListener('touchmove', preventSafariZoom, { passive: false });
-    
     const clockTick = setInterval(loadAndCheckPuzzle, 60000);
 
     return () => {
@@ -111,13 +83,8 @@ export default function App() {
     };
   }, []);
 
-  if (loading) {
-    return <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#020617', color: '#06B6D4', fontFamily: 'monospace' }}>INITIALIZING ENGINE...</div>;
-  }
-
-  if (!dailyPuzzle) {
-    return <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#020617', color: '#f59e0b', fontFamily: 'monospace' }}>CRITICAL ENGINE FAILURE</div>;
-  }
+  if (loading) return <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#020617', color: '#06B6D4', fontFamily: 'monospace' }}>INITIALIZING ENGINE...</div>;
+  if (!dailyPuzzle) return <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#020617', color: '#f59e0b', fontFamily: 'monospace' }}>CRITICAL ENGINE FAILURE</div>;
 
   return <GameBoard key={dailyPuzzle.id} dailyPuzzle={dailyPuzzle} />;
 }

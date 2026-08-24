@@ -6,17 +6,15 @@ export default function handler(req, res) {
     const file = join(process.cwd(), 'api', 'puzzles.json');
     const puzzles = JSON.parse(readFileSync(file, 'utf8'));
 
-    // --- FIX #3: THE TIMEZONE SHIFT ---
-    // The server asks the client what timezone they are in, and calculates the 
-    // exact YYYY-MM-DD for that specific region to ensure a true Midnight reset.
-    const userTz = req.query.tz || 'UTC';
-    const dateString = new Date().toLocaleDateString('en-CA', { timeZone: userTz });
+    // --- FIX: TAMPER-PROOF GLOBAL ROLLOVER ---
+    // We stripped the req.query.tz vulnerability. 
+    // The server dictates the time (America/New_York). 
+    // 'en-CA' cleanly outputs the YYYY-MM-DD format we need.
+    const dateString = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
 
     let puzzle = puzzles.find(p => p.date === dateString) || puzzles[puzzles.length - 1];
 
-    // --- FIX #4: HUMAN ERROR SANITY CHECK ---
-    // If you made a typo in the JSON database, the server catches it and logs a critical error
-    // before it has a chance to crash the player's browser.
+    // --- HUMAN ERROR SANITY CHECK ---
     let isCorrupted = false;
     const idSet = new Set();
     if (puzzle.items.length !== 6) isCorrupted = true;
@@ -27,11 +25,10 @@ export default function handler(req, res) {
     
     if (isCorrupted) {
       console.error(`CRITICAL: Puzzle data corrupted for date: ${dateString}`);
-      // Fallback to the very first puzzle just so the app doesn't white-screen
       puzzle = puzzles[0]; 
     }
 
-    // THE FIX: We strip the answers from the payload before sending it to the browser
+    // --- ANTI-CHEAT PAYLOAD STRIPPING ---
     const secureItems = puzzle.items.map(item => ({
       id: item.id,
       title: item.title
