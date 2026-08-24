@@ -1,16 +1,20 @@
 import os
 import json
 import time
+from dotenv import load_dotenv
 from google import genai
 from pydantic import BaseModel, Field
 
-# Ensure API Key is available in the terminal session
-if not os.environ.get("GEMINI_API_KEY"):
-    print("❌ Error: GEMINI_API_KEY environment variable not found.")
-    print("Run this first: $env:GEMINI_API_KEY=\"your_key_here\"")
+# 1. Load the hidden variables from your .env.local file
+load_dotenv(".env.local")
+
+# 2. Securely pull the key from the environment
+api_key = os.environ.get("GEMINI_API_KEY")
+if not api_key:
+    print("❌ Error: GEMINI_API_KEY not found in .env.local file.")
     exit(1)
 
-client = genai.Client()
+client = genai.Client(api_key=api_key)
 
 # --- SCHEMA DEFINITIONS ---
 class PuzzleItem(BaseModel):
@@ -131,12 +135,6 @@ def generate_puzzles():
 
 if __name__ == "__main__":
     generate_puzzles()
-
-# GOOD: Pulls from the terminal session, NOT hardcoded
-client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-
-# BAD: If your code looks like this, GitHub will block it forever
-# client = genai.Client(api_key="AIzaSyYourSecretKeyHere...")
 
     #python tools/generator.py
     #python tools/publish.py
