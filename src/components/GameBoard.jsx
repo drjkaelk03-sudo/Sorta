@@ -244,6 +244,7 @@ export default function GameBoard({ dailyPuzzle }) {
       }
     };
 
+    // Inside GameBoard.jsx
     try {
       const [validationRes] = await Promise.all([
         fetch('/api/validate', {
@@ -252,7 +253,8 @@ export default function GameBoard({ dailyPuzzle }) {
           body: JSON.stringify({
             puzzleId: dailyPuzzle.id,
             attemptSequence: sequence,
-            anonId: getOrCreateAnonId() 
+            anonId: getOrCreateAnonId(),
+            clientAttemptNum: attempts.length + 1
           }),
           signal: abortController.signal
         }),
