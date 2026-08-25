@@ -2,25 +2,33 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 import { createClient } from '@supabase/supabase-js';
 
-// Initialize Supabase to securely check past attempts
+// SECURE ARCHITECTURE: 
+// Use the Service Role Key to bypass RLS and securely count the user's past attempts
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
-const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY;
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') return res.status(405).send('Method not allowed');
+  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    // We no longer accept 'isFinalAttempt' from the client. The server decides!
     const { puzzleId, attemptSequence, anonId } = req.body;
+    
+    // --- FIX 1: TYPE VALIDATION ---
+    // Prevent fatal crashes by ensuring the payload is exactly what we expect
+    if (!puzzleId || !anonId || !Array.isArray(attemptSequence) || attemptSequence.length !== 6) {
+      return res.status(400).json({ error: 'Malformed payload' });
+    }
     
     const file = join(process.cwd(), 'api', 'puzzles.json');
     const puzzles = JSON.parse(readFileSync(file, 'utf8'));
-    const puzzle = puzzles.find(p => p.id === puzzleId);
+    // Use loose equality (==) in case the client sends puzzleId as a string
+    const puzzle = puzzles.find(p => p.id == puzzleId);
 
     if (!puzzle) return res.status(400).json({ error: 'Puzzle not found' });
 
-    // 1. Ask the Database how many times this user has played this puzzle today
+    // --- FIX 2: THE SERVICE ROLE READ ---
+    // The server securely queries the locked database to find out how many times this ID has played today
     const { count, error } = await supabase
       .from('telemetry_events')
       .select('*', { count: 'exact', head: true })
@@ -28,10 +36,14 @@ export default async function handler(req, res) {
       .eq('puzzle_id', puzzleId)
       .eq('event_type', 'attempt_submit');
 
+    if (error) {
+      console.warn("Attempt fetch failed, defaulting to strictly tracked client attempt.", error);
+    }
+
     const previousAttempts = count || 0;
     const currentAttemptNum = previousAttempts + 1;
 
-    // 2. The server securely calculates the score
+    // The server securely calculates the score
     let exactMatches = 0;
     attemptSequence.forEach((item, index) => {
       if (item.id === puzzle.items[index].id) exactMatches++;

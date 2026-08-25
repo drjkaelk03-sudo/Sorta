@@ -9,8 +9,24 @@ export const initAudio = () => {
       const AudioContextClass = window.AudioContext || window.webkitAudioContext;
       if (AudioContextClass) audioCtx = new AudioContextClass();
     }
-    if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume().catch(() => {});
-  } catch (e) {}
+    
+    if (audioCtx) {
+      // 1. Attempt standard resume
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume().catch(() => {});
+      }
+      
+      // 2. FIX: The iOS WebKit Unlocker
+      // Play a microscopic, silent buffer immediately to permanently authorize the audio context
+      const buffer = audioCtx.createBuffer(1, 1, 22050);
+      const source = audioCtx.createBufferSource();
+      source.buffer = buffer;
+      source.connect(audioCtx.destination);
+      source.start(0);
+    }
+  } catch (e) {
+    console.warn("Audio initialization bypassed.");
+  }
 };
 
 export const playAudio = (type, isMuted) => {
@@ -50,6 +66,8 @@ export const playAudio = (type, isMuted) => {
 
 export const triggerHaptic = (type) => {
   try {
+    // Note: This API is natively blocked by Apple on all iOS devices.
+    // It will gracefully degrade to nothing on iPhone, but work perfectly on Android.
     if (typeof window !== 'undefined' && window.navigator && window.navigator.vibrate) {
       if (type === 'suspense') window.navigator.vibrate(50);
       if (type === 'success') window.navigator.vibrate([30, 50, 30, 50, 100]);
