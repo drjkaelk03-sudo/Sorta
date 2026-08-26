@@ -6,31 +6,34 @@ export default function GameTile({ item, index, phase, gameState, handleKeyDown,
   const isPathA = phase === 'path_a_win' || gameState === 'lost';
   const countRef = useRef(null);
 
+  // NEW: Check if this specific tile is in the correct slot (arrays are 0-indexed, so trueRank - 1)
+  const isCorrectPosition = item.trueRank !== undefined && index === item.trueRank - 1;
+  // If they won the game OR this specific tile is correct, we paint it green
+  const isSuccess = gameState === 'won' || isCorrectPosition;
+
   useEffect(() => {
-    // If the game is over and we have a trueRank (1 through 6)
-    if (isPathA && item.trueRank !== undefined) {
-      const controls = animate(0, item.trueRank, {
+    // Animate up to the actual numeric value (e.g., the year)
+    if (isPathA && item.numericValue !== undefined) {
+      const controls = animate(0, item.numericValue, {
         duration: 1.2,
         delay: index * 0.08, 
         ease: "easeOut",
         onUpdate: (val) => {
           if (countRef.current) {
-            // Animate the numbers counting up
-            countRef.current.textContent = `#${val.toFixed(0)}`;
+            const formatted = val % 1 === 0 ? val.toFixed(0) : val.toFixed(2);
+            countRef.current.textContent = dailyPuzzle.unit ? `${formatted} ${dailyPuzzle.unit}` : formatted;
           }
         },
         onComplete: () => {
           if (countRef.current) {
-            // Lock in the final rank. If you have a specific year/value in the JSON, append it.
-            countRef.current.textContent = item.displayValue 
-              ? `#${item.trueRank} • ${item.displayValue}` 
-              : `#${item.trueRank}`;
+            // Lock in just the final result (e.g., "1921")
+            countRef.current.textContent = item.displayValue || item.numericValue;
           }
         }
       });
       return () => controls?.stop?.();
     }
-  }, [isPathA, item, index]);
+  }, [isPathA, item, index, dailyPuzzle.unit]);
 
   const safeNumericValue = item.numericValue || 0;
   const safeMax = maxRevealedValue || 1;
@@ -117,8 +120,8 @@ export default function GameTile({ item, index, phase, gameState, handleKeyDown,
         <div
           style={{
             backgroundColor: '#0f172a',
-            border: `1px solid ${gameState === 'lost' ? 'rgba(245, 158, 11, 0.4)' : 'rgba(16, 185, 129, 0.4)'}`,
-            boxShadow: `0 0 20px ${gameState === 'lost' ? 'rgba(245, 158, 11, 0.1)' : 'rgba(16, 185, 129, 0.1)'}`,
+            border: `1px solid ${isSuccess ? 'rgba(16, 185, 129, 0.4)' : 'rgba(245, 158, 11, 0.4)'}`,
+            boxShadow: `0 0 20px ${isSuccess ? 'rgba(16, 185, 129, 0.1)' : 'rgba(245, 158, 11, 0.1)'}`,
             borderRadius: "8px",
             padding: "1.25rem 1.5rem",
             display: "flex",
@@ -140,15 +143,15 @@ export default function GameTile({ item, index, phase, gameState, handleKeyDown,
             style={{
               position: 'absolute',
               top: 0, left: 0, bottom: 0,
-              backgroundColor: gameState === 'lost' ? 'rgba(245, 158, 11, 0.2)' : 'rgba(16, 185, 129, 0.2)',
-              borderRight: `2px solid ${gameState === 'lost' ? 'rgba(245, 158, 11, 0.8)' : 'rgba(16, 185, 129, 0.8)'}`,
+              backgroundColor: isSuccess ? 'rgba(16, 185, 129, 0.2)' : 'rgba(245, 158, 11, 0.2)',
+              borderRight: `2px solid ${isSuccess ? 'rgba(16, 185, 129, 0.8)' : 'rgba(245, 158, 11, 0.8)'}`,
               zIndex: 0
             }}
           />
           <span style={{ fontSize: '1rem', fontWeight: 700, color: "#f8fafc", zIndex: 1 }}>
             {item.title}
           </span>
-          <span ref={countRef} style={{ fontSize: '1.1rem', fontWeight: 700, color: gameState === 'lost' ? '#f59e0b' : '#10b981', fontVariantNumeric: "tabular-nums", zIndex: 1 }}>
+          <span ref={countRef} style={{ fontSize: '1.1rem', fontWeight: 700, color: isSuccess ? '#10b981' : '#f59e0b', fontVariantNumeric: "tabular-nums", zIndex: 1 }}>
             0
           </span>
         </div>
