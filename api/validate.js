@@ -39,3 +39,23 @@ export default async function handler(req, res) {
     res.status(500).json({ error: 'Validation failed' });
   }
 }
+// Inside api/validate.js
+const ENABLE_TELEMETRY = process.env.ENABLE_TELEMETRY === 'true';
+
+// The game mathematically grades the puzzle here... (This always runs)
+const isWin = checkExactMatches(guess, answer) === 6;
+
+// The Kill Switch limits the database ping
+if (ENABLE_TELEMETRY) {
+  try {
+    await supabase.from('telemetry_events').insert([{
+      anon_id: userId,
+      puzzle_id: puzzleId,
+      attempt_num: attemptNum,
+      score_k: isWin ? 6 : 0,
+      event_type: 'attempt_submit'
+    }]);
+  } catch (error) {
+    console.error("Telemetry failed, but game continues.");
+  }
+}
