@@ -429,18 +429,36 @@ export default function GameBoard({ dailyPuzzle }) {
               onReorder={setSequence}
               style={{ listStyleType: 'none', padding: 0, margin: 0, width: '100%' }}
             >
-              {sequence.map((item, index) => (
-                <GameTile 
-                  key={item.id}
-                  item={item} 
-                  index={index} 
-                  phase={phase}
-                  gameState={gameState}
-                  handleKeyDown={handleKeyDown}
-                  dailyPuzzle={dailyPuzzle}
-                  maxRevealedValue={maxRevealedValue}
-                />
-              ))}
+              {sequence.map((item, index) => {
+                // Determine tile status for post-game coloring
+                let tileStatus = 'default';
+                
+                if (gameState === 'won' || gameState === 'lost') {
+                  const correctIndex = item.trueRank - 1;
+                  
+                  if (index === correctIndex) {
+                    tileStatus = 'correct'; // Green: It is in the right spot right now
+                  } else {
+                    // Look back through the attempts array to see if they ever had it right
+                    const wasEverCorrect = attempts.some(att => att.sequence[correctIndex]?.id === item.id);
+                    tileStatus = wasEverCorrect ? 'previously_correct' : 'never_correct'; // Orange : Red
+                  }
+                }
+
+                return (
+                  <GameTile 
+                    key={item.id}
+                    item={item} 
+                    index={index} 
+                    phase={phase}
+                    gameState={gameState}
+                    handleKeyDown={handleKeyDown}
+                    dailyPuzzle={dailyPuzzle}
+                    maxRevealedValue={maxRevealedValue}
+                    tileStatus={tileStatus} // Pass the calculated history down
+                  />
+                );
+              })}
             </Reorder.Group>
           </motion.div>
 

@@ -1,15 +1,22 @@
 import React, { useEffect, useRef } from 'react';
 import { Reorder, motion, animate } from 'framer-motion';
 
-export default function GameTile({ item, index, phase, gameState, handleKeyDown, dailyPuzzle, maxRevealedValue, onDragEnd }) {
+export default function GameTile({ item, index, phase, gameState, handleKeyDown, dailyPuzzle, maxRevealedValue, onDragEnd, tileStatus }) {
   const isIdle = phase === 'idle' && gameState === 'playing';
   const isPathA = phase === 'path_a_win' || gameState === 'lost';
   const countRef = useRef(null);
 
-  // NEW: Check if this specific tile is in the correct slot (arrays are 0-indexed, so trueRank - 1)
-  const isCorrectPosition = item.trueRank !== undefined && index === item.trueRank - 1;
-  // If they won the game OR this specific tile is correct, we paint it green
-  const isSuccess = gameState === 'won' || isCorrectPosition;
+  // Map the status to our new 3-color design architecture
+  const colorMap = {
+    correct: { border: 'rgba(16, 185, 129, 0.4)', shadow: 'rgba(16, 185, 129, 0.1)', bg: 'rgba(16, 185, 129, 0.2)', bar: 'rgba(16, 185, 129, 0.8)', text: '#10b981' }, // Green
+    previously_correct: { border: 'rgba(245, 158, 11, 0.4)', shadow: 'rgba(245, 158, 11, 0.1)', bg: 'rgba(245, 158, 11, 0.2)', bar: 'rgba(245, 158, 11, 0.8)', text: '#f59e0b' }, // Orange
+    never_correct: { border: 'rgba(239, 68, 68, 0.4)', shadow: 'rgba(239, 68, 68, 0.1)', bg: 'rgba(239, 68, 68, 0.2)', bar: 'rgba(239, 68, 68, 0.8)', text: '#ef4444' }, // Red
+    default: { border: 'rgba(16, 185, 129, 0.4)', shadow: 'rgba(16, 185, 129, 0.1)', bg: 'rgba(16, 185, 129, 0.2)', bar: 'rgba(16, 185, 129, 0.8)', text: '#10b981' }
+  };
+  
+  const colors = colorMap[tileStatus] || colorMap.default;
+
+  // ... keep the useEffect and handleDragStart exactly as they are ...
 
   useEffect(() => {
     // Animate up to the actual numeric value (e.g., the year)
@@ -120,8 +127,8 @@ export default function GameTile({ item, index, phase, gameState, handleKeyDown,
         <div
           style={{
             backgroundColor: '#0f172a',
-            border: `1px solid ${isSuccess ? 'rgba(16, 185, 129, 0.4)' : 'rgba(245, 158, 11, 0.4)'}`,
-            boxShadow: `0 0 20px ${isSuccess ? 'rgba(16, 185, 129, 0.1)' : 'rgba(245, 158, 11, 0.1)'}`,
+            border: `1px solid ${colors.border}`,
+            boxShadow: `0 0 20px ${colors.shadow}`,
             borderRadius: "8px",
             padding: "1.25rem 1.5rem",
             display: "flex",
@@ -143,15 +150,15 @@ export default function GameTile({ item, index, phase, gameState, handleKeyDown,
             style={{
               position: 'absolute',
               top: 0, left: 0, bottom: 0,
-              backgroundColor: isSuccess ? 'rgba(16, 185, 129, 0.2)' : 'rgba(245, 158, 11, 0.2)',
-              borderRight: `2px solid ${isSuccess ? 'rgba(16, 185, 129, 0.8)' : 'rgba(245, 158, 11, 0.8)'}`,
+              backgroundColor: colors.bg,
+              borderRight: `2px solid ${colors.bar}`,
               zIndex: 0
             }}
           />
           <span style={{ fontSize: '1rem', fontWeight: 700, color: "#f8fafc", zIndex: 1 }}>
             {item.title}
           </span>
-          <span ref={countRef} style={{ fontSize: '1.1rem', fontWeight: 700, color: isSuccess ? '#10b981' : '#f59e0b', fontVariantNumeric: "tabular-nums", zIndex: 1 }}>
+          <span ref={countRef} style={{ fontSize: '1.1rem', fontWeight: 700, color: colors.text, fontVariantNumeric: "tabular-nums", zIndex: 1 }}>
             0
           </span>
         </div>
