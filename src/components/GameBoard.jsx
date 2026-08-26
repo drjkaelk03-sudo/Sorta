@@ -10,6 +10,7 @@ import { initAudio, playAudio, triggerHaptic } from '../utils/audio';
 import { useTelemetry, getOrCreateAnonId } from '../utils/telemetry';
 
 const MAX_ATTEMPTS = 5;
+const SHOW_STATS = import.meta.env.VITE_ENABLE_STATS === 'true';
 
 // Fisher-Yates (Knuth) Shuffle for mathematically true randomness
 const getInitialSequence = (items) => {
@@ -170,7 +171,18 @@ export default function GameBoard({ dailyPuzzle }) {
       setAttempts(prev => [...prev, newAttempt]);
       
       if (revealData) {
-        setSequence(prev => prev.map(item => revealData.find(r => r.id === item.id) || item));
+        setSequence(prev => prev.map(item => {
+          // Find the correct data from the server
+          const serverItem = revealData.find(r => r.id === item.id) || {};
+          // Determine its true numerical rank (1 through 6)
+          const trueIndex = revealData.findIndex(r => r.id === item.id);
+          
+          return { 
+            ...item, 
+            ...serverItem, 
+            trueRank: trueIndex !== -1 ? trueIndex + 1 : 0 
+          };
+        }));
       }
 
       const isWin = exactMatches === sequence.length;
@@ -375,9 +387,12 @@ export default function GameBoard({ dailyPuzzle }) {
             </div>
         
             <div style={{ position: 'absolute', right: 0, display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <button onClick={() => setShowStatsModal(true)} style={{ background: 'none', border: 'none', color: '#64748B', cursor: 'pointer', display: 'flex', alignItems: 'center', padding: 0 }}>
-                <BarChart2 size={18} />
-              </button>
+              {/* Only render this button if SHOW_STATS is true */}
+              {SHOW_STATS && (
+                <button onClick={() => setShowStatsModal(true)} style={{ background: 'none', border: 'none', color: '#64748B', cursor: 'pointer', display: 'flex', alignItems: 'center', padding: 0 }}>
+                  <BarChart2 size={18} />
+                </button>
+              )}
               <button onClick={() => setIsAudioMuted(!isAudioMuted)} style={{ background: 'none', border: 'none', color: '#64748B', cursor: 'pointer', display: 'flex', alignItems: 'center', padding: 0 }}>
                 {isAudioMuted ? <VolumeX size={18} /> : <Volume2 size={18} />}
               </button>

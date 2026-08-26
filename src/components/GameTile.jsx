@@ -7,26 +7,30 @@ export default function GameTile({ item, index, phase, gameState, handleKeyDown,
   const countRef = useRef(null);
 
   useEffect(() => {
-    if (isPathA && item.numericValue !== undefined) {
-      const controls = animate(0, item.numericValue, {
+    // If the game is over and we have a trueRank (1 through 6)
+    if (isPathA && item.trueRank !== undefined) {
+      const controls = animate(0, item.trueRank, {
         duration: 1.2,
         delay: index * 0.08, 
         ease: "easeOut",
         onUpdate: (val) => {
           if (countRef.current) {
-            const formatted = val % 1 === 0 ? val.toFixed(0) : val.toFixed(2);
-            countRef.current.textContent = `${formatted} ${dailyPuzzle.unit}`;
+            // Animate the numbers counting up
+            countRef.current.textContent = `#${val.toFixed(0)}`;
           }
         },
         onComplete: () => {
-          if (countRef.current && item.displayValue) {
-            countRef.current.textContent = item.displayValue;
+          if (countRef.current) {
+            // Lock in the final rank. If you have a specific year/value in the JSON, append it.
+            countRef.current.textContent = item.displayValue 
+              ? `#${item.trueRank} • ${item.displayValue}` 
+              : `#${item.trueRank}`;
           }
         }
       });
       return () => controls?.stop?.();
     }
-  }, [isPathA, item, index, dailyPuzzle.unit]);
+  }, [isPathA, item, index]);
 
   const safeNumericValue = item.numericValue || 0;
   const safeMax = maxRevealedValue || 1;
