@@ -4,7 +4,7 @@ import { Share, Volume2, VolumeX, BarChart2 } from 'lucide-react';
 
 // External Local Imports
 import GameTile from './GameTile';
-import StatsModal from './StatsModal'; // <--- THIS WAS MISSING
+import StatsModal from './StatsModal';
 import { getPlayerStats, savePlayerStats } from '../utils/storage';
 import { initAudio, playAudio, triggerHaptic } from '../utils/audio';
 import { useTelemetry, getOrCreateAnonId } from '../utils/telemetry';
@@ -159,9 +159,12 @@ export default function GameBoard({ dailyPuzzle }) {
     const abortController = new AbortController();
     const timeoutId = setTimeout(() => abortController.abort(), 5000);
 
-    // FIXED: Scope bug resolved by passing all required arguments locally
-    const processCalibrationResult = (exactMatches, currentAttemptNum, revealData) => {
-      const newAttempt = { attemptNumber: currentAttemptNum, sequence: [...sequence], exactMatches };
+    // FIX: Define the attempt number firmly in the local scope, ignoring server timeline entirely
+    const trueAttemptNum = attempts.length + 1;
+
+    // FIX: Removed attemptNumber from arguments. Rely strictly on trueAttemptNum.
+    const processCalibrationResult = (exactMatches, revealData) => {
+      const newAttempt = { attemptNumber: trueAttemptNum, sequence: [...sequence], exactMatches };
       logAttempt(newAttempt.attemptNumber, exactMatches, 0);
 
       setAttempts(prev => [...prev, newAttempt]);
@@ -188,7 +191,7 @@ export default function GameBoard({ dailyPuzzle }) {
             currentStreak: newStreak,
             maxStreak: Math.max(prev.maxStreak, newStreak),
             lastPlayedPuzzleId: dailyPuzzle.id,
-            distribution: prev.distribution.map((d, i) => i === currentAttemptNum - 1 ? d + 1 : d)
+            distribution: prev.distribution.map((d, i) => i === trueAttemptNum - 1 ? d + 1 : d)
           };
           savePlayerStats(newStats);
           return newStats;
@@ -223,7 +226,9 @@ export default function GameBoard({ dailyPuzzle }) {
 
         setTimeout(() => {
           if (!isMounted.current) return;
-          if (currentAttemptNum >= MAX_ATTEMPTS) {
+          
+          // FIX: Explicitly evaluate trueAttemptNum against MAX_ATTEMPTS to break the loop
+          if (trueAttemptNum >= MAX_ATTEMPTS) {
             setGameState('lost');
 
             setPlayerStats(prev => {
@@ -240,11 +245,10 @@ export default function GameBoard({ dailyPuzzle }) {
           }
           setPhase('idle');
           isSubmitting.current = false; 
-        }, 500); // Tightened timeout loop
+        }, 500);
       }
     };
 
-    // Inside GameBoard.jsx
     try {
       const [validationRes] = await Promise.all([
         fetch('/api/validate', {
@@ -254,7 +258,7 @@ export default function GameBoard({ dailyPuzzle }) {
             puzzleId: dailyPuzzle.id,
             attemptSequence: sequence,
             anonId: getOrCreateAnonId(),
-            clientAttemptNum: attempts.length + 1
+            clientAttemptNum: trueAttemptNum
           }),
           signal: abortController.signal
         }),
@@ -267,7 +271,8 @@ export default function GameBoard({ dailyPuzzle }) {
       if (!validationRes.ok) throw new Error("Validation failed");
       const data = await validationRes.json();
       
-      processCalibrationResult(data.exactMatches, data.attemptNumber, data.revealData);
+      // FIX: Only pass the exactMatches and revealData. The local scope handles the attempt number.
+      processCalibrationResult(data.exactMatches, data.revealData);
 
     } catch (err) {
       console.warn("Server offline. Using local offline grading fallback.", err);
@@ -278,12 +283,11 @@ export default function GameBoard({ dailyPuzzle }) {
         if (item.id === dailyPuzzle.items[index].id) exactMatches++;
       });
       
-      const currentAttemptNum = attempts.length + 1;
-      const revealData = currentAttemptNum >= MAX_ATTEMPTS || exactMatches === sequence.length 
+      const revealData = trueAttemptNum >= MAX_ATTEMPTS || exactMatches === sequence.length 
         ? dailyPuzzle.items 
         : null;
 
-      processCalibrationResult(exactMatches, currentAttemptNum, revealData);
+      processCalibrationResult(exactMatches, revealData);
     }
   };
 
