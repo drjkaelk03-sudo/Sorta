@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { X, Share } from 'lucide-react';
 
+const SHOW_STATS = import.meta.env.VITE_ENABLE_STATS === 'true';
+
 export default function StatsModal({ stats, communityStats, onClose, show, onShare, shareCopied }) {
   if (!show) return null;
   
@@ -48,7 +50,7 @@ export default function StatsModal({ stats, communityStats, onClose, show, onSha
           ))}
         </div>
 
-        {communityStats && (
+        {SHOW_STATS && communityStats && (
           <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid #334155', textAlign: 'center' }}>
             <h3 style={{ margin: '0 0 1rem 0', color: '#94a3b8', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Global Community</h3>
             <div style={{ display: 'flex', justifyContent: 'space-around' }}>
