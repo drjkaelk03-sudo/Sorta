@@ -3,8 +3,8 @@ import { createClient } from '@supabase/supabase-js';
 // SECURE ARCHITECTURE: 
 // We use the Service Role Key so we can completely lock down the Supabase database.
 // Do NOT use VITE_ prefix for the service key, or it will leak to the frontend.
-const supabaseUrl = process.env.VITE_SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SERVICE_ROLE_KEY;
 
 const supabase = createClient(supabaseUrl, supabaseKey);
 
