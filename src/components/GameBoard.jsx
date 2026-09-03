@@ -87,6 +87,14 @@ export default function GameBoard({ dailyPuzzle }) {
 
   useEffect(() => {
     const fetchStats = async () => {
+      // THE FIX: If the feature flag is false, abort the fetch entirely.
+      if (!SHOW_STATS) {
+        if (isMounted.current) {
+           setCommunityStats({ totalPlayers: 14205, parAttempts: 3.4 });
+        }
+        return; 
+      }
+
       try {
         const response = await fetch(`/api/stats?puzzleId=${dailyPuzzle.id}`);
         if (!response.ok) throw new Error("Stats fetch failed");
@@ -98,10 +106,7 @@ export default function GameBoard({ dailyPuzzle }) {
       } catch (error) {
         console.warn("Server offline. Loading mock community stats for preview.");
         if (isMounted.current) {
-          setCommunityStats({
-            totalPlayers: 14205,
-            parAttempts: 3.4
-          });
+          setCommunityStats({ totalPlayers: 14205, parAttempts: 3.4 });
         }
       }
     };
